@@ -1,0 +1,161 @@
+//reset css
+@import 'reset';
+//typography
+@import 'typography';
+// global
+@import 'global';
+
+// ===homepage===
+header{
+	.top-header{
+		text-align: center;
+		&-image{
+			width: 85px;
+			display: inline-block;
+			margin: 10px 0;
+			img{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				display: block;
+			}
+		}
+		&-name{
+			h1{
+				margin-bottom: 5px;
+				a{
+					font-size: 28px;
+					font-family: baumans;
+				}
+				
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+	}
+	nav{
+		padding: 20px 0;
+		margin-top: 10px;
+		border-bottom: 1px solid #e8e8e8;
+		ul{
+			list-style: none;
+			text-align: center;
+			li{
+				display: inline-block;
+			    padding: 0 20px;
+			    font-size: 16px;
+			    color: #333;
+			    font-weight: bold;
+				a{
+
+				}
+			}
+		}
+
+	}
+}
+
+.content{
+	.intro{
+		color:#333;
+		&-text{
+			margin:10px 0;
+		}
+	}
+	.skill{
+		&-title{
+			margin-top: 16px;
+			font-family: sans_bold;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		&-box{
+			&-item{
+					margin-bottom: 30px;
+				.title{
+					margin-bottom: 5px;
+					font-family: sans_bold;
+					font-size: 16px;
+				}
+				.item{
+					padding:3px 0;
+					.progress{
+						background:#eee;
+						border:1px solid #eee;
+						border-radius:2px;
+						height: 20px;
+						.core{
+							background:lightblue;
+							width: 0%;
+							height: 100%;
+							text-align: center;
+							color:white;
+							line-height: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// ===project===
+.project{
+	padding:10px 0;
+	&-title{
+		font-size: 28px;
+		font-family: sans_bold;
+		padding:30px 0;
+	}
+	&-html{
+		margin-bottom: 30px;
+		h2{
+			font-size: 20px;
+			font-family: sans_bold;
+			margin-bottom: 15px;
+		}
+		.content{
+			h3{
+				margin-bottom: 10px;
+				a{
+					color:#23348a;
+					font-size: 16px;
+				}
+			}
+			
+		}
+	}
+	&-javascript{
+		@extend .project-html;
+	}
+	&-app{
+		@extend .project-html;
+	}
+
+}
+
+// ===contact===
+.contact{
+	&-title{
+		font-size: 24px;
+		font-family: sans_bold;
+		padding:30px 0;
+	}
+	ul{
+		list-style: none;
+		li{
+			padding:8px 0;
+			i.fa{
+				margin-right: 10px;
+			}
+		}
+	}
+}
+// =========end========
+@media (max-width:576px){
+	[class*="col-"]{
+		width: 100%;
+		float:none;
+		display: block;
+	}
+}

@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: sans_regular;
+  src: url("../font/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: sans_bold;
+  src: url("../font/OpenSans-Bold.ttf"); }
+@font-face {
+  font-family: baumans;
+  src: url("../font/baumans-regular.ttf"); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  border-top: 3px solid lightblue;
+  font-family: sans_regular;
+  color: #777;
+  font-size: 15px;
+  line-height: 24px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333; }
+
+a {
+  color: inherit;
+  text-transform: capitalize;
+  text-decoration: none; }
+
+a:hover {
+  color: lightblue;
+  transition: all 200ms ease; }
+
+.container {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+  .row :after {
+    content: '';
+    clear: both;
+    display: block; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+header .top-header {
+  text-align: center; }
+  header .top-header-image {
+    width: 85px;
+    display: inline-block;
+    margin: 10px 0; }
+    header .top-header-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: block; }
+  header .top-header-name h1 {
+    margin-bottom: 5px; }
+    header .top-header-name h1 a {
+      font-size: 28px;
+      font-family: baumans; }
+  header .top-header-name p {
+    font-size: 16px; }
+header nav {
+  padding: 20px 0;
+  margin-top: 10px;
+  border-bottom: 1px solid #e8e8e8; }
+  header nav ul {
+    list-style: none;
+    text-align: center; }
+    header nav ul li {
+      display: inline-block;
+      padding: 0 20px;
+      font-size: 16px;
+      color: #333;
+      font-weight: bold; }
+
+.content .intro {
+  color: #333; }
+  .content .intro-text {
+    margin: 10px 0; }
+.content .skill-title {
+  margin-top: 16px;
+  font-family: sans_bold;
+  text-transform: uppercase;
+  font-size: 20px; }
+.content .skill-box-item {
+  margin-bottom: 30px; }
+  .content .skill-box-item .title {
+    margin-bottom: 5px;
+    font-family: sans_bold;
+    font-size: 16px; }
+  .content .skill-box-item .item {
+    padding: 3px 0; }
+    .content .skill-box-item .item .progress {
+      background: #eee;
+      border: 1px solid #eee;
+      border-radius: 2px;
+      height: 20px; }
+      .content .skill-box-item .item .progress .core {
+        background: lightblue;
+        width: 0%;
+        height: 100%;
+        text-align: center;
+        color: white;
+        line-height: 20px; }
+
+.project {
+  padding: 10px 0; }
+  .project-title {
+    font-size: 28px;
+    font-family: sans_bold;
+    padding: 30px 0; }
+  .project-html, .project-javascript, .project-app {
+    margin-bottom: 30px; }
+    .project-html h2, .project-javascript h2, .project-app h2 {
+      font-size: 20px;
+      font-family: sans_bold;
+      margin-bottom: 15px; }
+    .project-html .content h3, .project-javascript .content h3, .project-app .content h3 {
+      margin-bottom: 10px; }
+      .project-html .content h3 a, .project-javascript .content h3 a, .project-app .content h3 a {
+        color: #23348a;
+        font-size: 16px; }
+
+.contact-title {
+  font-size: 24px;
+  font-family: sans_bold;
+  padding: 30px 0; }
+.contact ul {
+  list-style: none; }
+  .contact ul li {
+    padding: 8px 0; }
+    .contact ul li i.fa {
+      margin-right: 10px; }
+
+@media (max-width: 576px) {
+  [class*="col-"] {
+    width: 100%;
+    float: none;
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */
