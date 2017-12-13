@@ -1,0 +1,132 @@
+*{margin:0; padding: 0; box-sizing: border-box;}
+body,html{
+min-width: 100%;
+min-height: 100%;
+}
+body{
+	background: url('super.jpg') no-repeat center;
+	background-size: cover;
+}
+.wrap{
+	max-width: 950px;
+	margin: auto;
+	margin-bottom: 50px;
+	max-height: 500px;
+}
+.grid{
+	float: left;
+	display: grid;
+	grid-template-columns:repeat(6,1fr);
+	grid-gap: 12px;
+	position: relative;
+}
+.card img{
+	border-radius: 3px;
+	width: 100%;
+	height: 100%;
+}
+.card{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+	cursor: pointer;
+	box-shadow: 0 0 3px 0 #08aee4;
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.card:hover{
+	box-shadow: 0 0 15px 0 #196e8a;
+}
+.front{
+	transform: rotateY(180deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.back{
+	transform: rotateY(0deg);
+}
+.toggleback{
+	transform: rotateY(180deg);
+}
+.togglefront{
+	transform: rotateY(0deg);
+}
+
+.front,.back{
+	transition: all 0.5s;
+	backface-visibility: hidden;
+	height: 100%;
+}
+.flipped {
+	transform: rotateY(180deg);
+}
+#progress{
+	margin: 25px 0 50px 0;
+	width: 100%;
+	background-color: rgba(253, 252, 252, 0.9);
+}
+#bar{
+	width: 100%;
+	height: 20px;
+	background-color: rgba(123, 170, 247, 0.9);
+}
+.popup{
+	width: 100%;
+	height:100%;
+	background: rgba(123, 170, 247, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.play
+/*,.win,.lose*/{
+	position: absolute;
+	top: 43%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+img#go{
+	cursor: pointer;
+	position: absolute;
+	top: 22%;
+	left: 100%;
+}
+.win{
+	top: 35%;
+	opacity: 0;
+	z-index: 1;
+}
+.lose{
+	width: 100%;
+	height:100%;
+	background: rgba(255, 255, 255, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+}
+.box{
+	position: absolute;
+	display: grid;
+	justify-items: center;
+	top: 37%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+button{
+	width: 120px;
+	height: 45px;
+	background: orange;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 20px;
+}
+button:focus{
+	outline: none;
+}

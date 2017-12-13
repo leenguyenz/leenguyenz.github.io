@@ -1,0 +1,210 @@
+
+@mixin reset{
+	padding:0;
+	margin:0;
+}
+@mixin z-index($z-index) {
+    position:relative;
+    z-index: $z-index;
+    
+}
+@mixin background-after() {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13,13,13,0.50);
+}
+@mixin text-hover() {
+    color:$text-color-main;
+    transition:all 300ms ease;
+}
+@mixin background-hover() {
+	background:$text-color-main;
+    border-color:$text-color-main;
+    transition: all 300ms ease;
+}
+@mixin background-image() {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@mixin blur(){
+    background: #00000090;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    &.blur{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.button-reservation{
+    display: inline-block;
+    background:$text-color-main;
+    font-size: $font-size-small;
+    padding:9px 35px;
+    border:2px solid $text-color-main;
+    text-transform: capitalize;
+    margin-top: 24px;
+    border-radius:3px;
+    cursor: pointer;
+    &:hover{
+        background:none;
+        transition: all 300ms ease;
+    }
+}
+
+@mixin title($font-size) {
+    font-family: $font-dancing-bold;
+    font-size: $font-size;
+    line-height: $line-height-xx-large;
+    color:$text-color-main;
+}
+@mixin title-box($font-size) {
+    font-family: $font-oswald-regular;
+    font-size: $font-size;
+    line-height: $line-height-large;
+    text-transform: capitalize;
+}
+@mixin text($font-size,$color) {
+    font-size: $font-size;
+    font-family: $font-roboto-bold;
+    line-height: $line-height-x-large;
+    color: $color;
+    text-transform: capitalize;
+}
+.active{
+    color:$text-color-main!important;
+}
+.visible{
+    display: block!important;
+}
+
+// animate nav
+.fixed-nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    opacity:1;
+    visibility: visible;
+    background:#fff;
+    animation: fadeInDown 500ms linear 1;
+}
+
+@keyframes fadeInDown{
+    from{opacity:0; transform:translate3d(0, -100%, 0)}
+    to{opacity:1; transform:none;}
+}
+
+//back-to-top
+.back-to-top{
+        position: fixed;
+        bottom: 50px;
+        right: 5px;
+        width: 40px;
+        height: 40px;
+        background: #000;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        z-index: 5;
+        cursor: pointer;
+        display: none;
+        a{color: #fff;};
+        &:hover{
+            background:$text-color-main;
+            transition: all 500ms ease;
+        }
+}
+// animate
+.laclu{
+    animation: laclu 1s forwards;
+    transform-origin: 50% 0;
+}
+@-webkit-keyframes laclu{
+    0%{transform:rotate(0deg)}
+    20%{transform:rotate(15deg)}
+    40%{transform:rotate(-10deg)}
+    60%{transform:rotate(5deg)}
+    80%{transform:rotate(-5deg)}
+    100%{transform:rotate(0deg)}
+}
+
+.fadein{ 
+    animation: fadein 1s forwards;
+}
+.fadein:nth-child(1){
+    animation-delay:0;
+}
+.fadein:nth-child(2){
+    animation-delay:0.2s;
+}
+.fadein:nth-child(3){
+    animation-delay:0.4s;
+}
+@-webkit-keyframes fadein{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+
+.fadeinup{
+    animation: fadeinup 1s forwards;
+}
+.fadeinup:nth-child(1){
+    animation-delay:0;
+}
+.fadeinup:nth-child(2){
+    animation-delay:0.2s;
+}
+.fadeinup:nth-child(3){
+    animation-delay:0.4s;
+}
+@-webkit-keyframes fadeinup{
+   0%{transform:translateY(30px); opacity:0}
+100%{transform:translateY(0); opacity:1}
+}
+
+.fadeinleft{
+    animation: fadeinleft 1s forwards;
+}
+@-webkit-keyframes fadeinleft{
+    0%{transform:translateX(-100%); opacity:0}
+    100%{transform:translateX(0); opacity:1}
+}
+
+.fadeinright{
+    animation: fadeinright 2s forwards;
+}
+.fadeinright:nth-child(1){
+    animation-delay:0;
+}.fadeinright:nth-child(2){
+    animation-delay:0.1s;
+}.fadeinright:nth-child(3){
+    animation-delay:0.2s;
+}.fadeinright:nth-child(4){
+    animation-delay:0.3s;
+}.fadeinright:nth-child(5){
+    animation-delay:0.4s;
+}.fadeinright:nth-child(6){
+    animation-delay:0.5s;
+}
+@-webkit-keyframes fadeinright{
+    0%{transform:translateX(10px); opacity:0}
+    100%{transform:translateX(0); opacity:1}
+}
+

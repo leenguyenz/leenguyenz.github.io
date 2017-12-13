@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Quiz</title>
+	<link rel="stylesheet" href="css/quiz.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="quiz">
+			<h3 id="title">My Quiz</h3>
+			<button id="theme" title="Change Theme"></button>
+			<div id="question"></div>
+			<div class="box">
+				<input type="radio" name = 'answer' value="1" id = "rad1"><label for="rad1"><span id = "a1"></span></label>
+				<input type="radio" name = 'answer' value="2" id = "rad2"><label for="rad2"><span id = "a2"></span></label>
+				<input type="radio" name = 'answer' value="3" id = "rad3"><label for="rad3"><span id = "a3"></span></label>
+				<input type="radio" name = 'answer' value="4" id = "rad4"><label for="rad4"><span id = "a4"></span></label>
+			</div>
+			<button id = 'next'>Next Question</button>
+			<div id = "messenger"></div>
+		</div>
+		<div id="result"></div>
+		<button id="replay">Replay Now!</button>
+	</div>
+	<script src = "js/script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+@media (max-width: 575px){
+	.topheader{
+		&-opening{
+			display: block;
+			border-bottom: 1px solid;
+    		margin-bottom: 10px;
+		}
+		&-hotline{
+			border:none;
+		}
+	}
+    .account-box{
+        width: 280px;
+    }
+
+	.banner{
+        .owl-item{
+            .banner-caption{
+                width: 100%;
+                img{
+                    display: none;
+                }
+                &-title{
+                    font-size:$font-size-large;
+                    line-height: $font-size-large;
+                }
+                &-text{
+                    font-size: $font-size-extra-small;
+                    line-height: 18px;
+                    margin-bottom: 8px;
+                }
+                .button-reservation{
+                     padding: 0px 20px;
+                    font-size: $font-size-extra-small;
+                }
+            }
+        }
+    }
+
+    .about{
+        img{width:100%;}
+        .col-xs-12.col-sm-4{
+            &:nth-child(2){
+               margin:30px 0; 
+            }
+        }
+    }
+    .menu{
+        &-intro{
+            &-title{font-size:$font-size-x-large }
+            &-text{font-size:$font-size-large}
+        }
+        .menu-item-dining{
+            padding: 15px 0 0 100px;
+            &-image{
+                width: 75px;
+            }
+        }
+    }
+    .special{
+        .carousel-control{
+            width: 35px;
+            height: 35px;
+        }
+        .carousel-control.left {
+            right: 40px;
+        }
+    }
+    .sale{
+        .sale-intro-title{
+            font-size: $font-size-xx-large;
+        }
+        .sale-intro-text{
+            font-size: $font-size-x-regular;
+        }
+        .sale-item-box-title{margin-top: 10px}
+    }
+    .reservation{
+        .reservation-intro-title{
+            font-size: $font-size-xx-large;
+        }
+        .reservation-intro-text{
+            font-size: $font-size-x-large;
+        }
+    }
+    .chef {
+    padding: 60px 0;
+    }
+    .testimonial{
+        #testimonial-slide{
+            .owl-item{
+                &-text{
+                    padding:0;
+                    q{
+                        font-size: $font-size-main;
+                        line-height: $line-height-main;
+                    }
+                }
+            }
+        }     
+    }
+    .blog{
+        .col-xs-12.col-sm-4:nth-child(2){margin:30px 0;}
+    }
+    .topfooter{
+        &-col3{
+            margin:30px 0;
+        }
+    }
+    section.about-us{
+        .menu-intro{
+            padding:90px 0;
+            &-title{
+                font-size: $font-size-large;
+            }
+        }
+    }
+    section.service{
+        .about{
+            &-box{
+                img{
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .tablebooking{
+        padding:60px 0;
+        .sale-intro-title{
+            font-size: $font-size-large;
+        }
+        p{
+            font-size: $font-size-main;
+        }
+    }
+    #reservationpage{
+    .reservation{
+        .reservation-intro-title{
+            font-size: $font-size-large;
+        }
+    }
+    .about-us{
+        .about-intro {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .image-holder{
+            margin-top: 10px;
+        }
+    }
+}
+// ---------------------------------------
+//                Contact
+// ---------------------------------------
+.location{
+    padding:60px 0;
+    .sale-intro{
+        &-text{
+            font-size:$font-size-x-regular;
+        }
+    }
+    &-box{
+        address{
+            text-align: left;
+        }   
+    }
+    
+}
+#contactpage{
+    .menu-intro{
+        &-text{
+            font-size:$font-size-x-regular;
+        }
+    }
+}
+
+// ---------------------------------------
+//                Menu
+// ---------------------------------------
+.dishes{
+    padding: 30px 0;
+    .sale-intro-title{
+        font-size: $font-size-large;
+    }
+    .sale-intro-text{
+        font-size: $font-size-regular;
+    }
+}
+// ---------------------------------------
+//                gallery
+// ---------------------------------------
+.gallery{
+    .sale-intro-title{
+        font-size: $font-size-large;
+    }
+    .sale-intro-text{
+        font-size: $font-size-regular;
+    }
+}
+// ---------------------------------------
+//                blog
+// ---------------------------------------
+#navigation{
+    margin-bottom:30px;
+}
+.blog-intro-title{
+    font-size: $font-size-x-large ;
+}
+// ---------------------------------------
+//                post
+// ---------------------------------------
+.post{
+    .blog-item-box{
+        img{width:100%;}
+    }
+    .comment{
+        &-box{
+        padding-left:0;
+        &:nth-child(3){
+                margin:30px 0;
+            }
+            &-image{
+                position: static;
+                width: 100px;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+       } 
+    }
+}
+// ---------------------------------------
+//                shop
+// ---------------------------------------
+section.shoppage{
+    .menu-intro{
+        &-title{
+            font-size: $font-size-large;
+        }   
+        &-text{
+            font-size: $font-size-large;
+        }
+    }
+    .shop{
+        padding:60px 0;
+    }
+}
+// ---------------------------------------
+//                product
+// ---------------------------------------
+.productpage{
+    .menu-intro{
+        &-title{
+            font-size:$font-size-large;
+        }
+        padding:120px 0;
+    }
+    .product-detail-price .addcart button{
+        padding:14px 15px;
+    }
+}
+// ---------------------------------------
+//                Shopping-cart
+// ---------------------------------------
+.shopping{
+    .menu-intro{
+        &-title{
+            font-size:$font-size-large;
+        }
+    }
+}
+.shopping-cart{
+    .coupon{
+        &-form{
+            input{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            button{
+                position:static;
+                width: 100%;
+            }
+        }
+        
+    }
+}
+// ---------------------------------------
+//                Checkout
+// ---------------------------------------
+#checkoutpage{
+    .checkout{
+        padding:60px 0;
+        &-customer{
+            &-login{
+                padding-left:10px;
+                height: 100px;
+                a{
+                    position: static;
+                    margin-top: 10px;
+                    padding:5px 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+}

@@ -1,0 +1,74 @@
+// @media (max-width: 1199px){
+// ---------------------------------------
+//                Homepage
+// ---------------------------------------
+	// .banner{
+	// 	.banner-caption{
+	// 		img{
+	// 			width: 30%;
+	// 		}
+	// 		&-title{
+	// 			font-size:$font-size-xxx-large;
+	// 			line-height: $line-height-x-large;
+	// 		}
+	// 		&-text{
+	// 			font-size: $font-size-small;
+	// 			line-height: $line-height-main;
+	// 		}
+	// 		.button-reservation{
+	// 			margin-top:0;
+	// 		}
+	// 	}
+	// }
+// ---------------------------------------
+//                AboutPage
+// ---------------------------------------
+	nav{
+		ul{
+			li{
+				margin-left: 23px;
+			}
+		}
+	}
+
+	section.about-us{
+		.menu-intro{
+			padding:120px 0;
+		}
+		.about-intro{
+			&-text{
+				margin-bottom: 8px;
+			}
+			.button-reservation{
+				margin:0;
+			}
+		}
+	}
+	section.service{
+		.menu-intro{
+			padding:120px 0;
+			&-title{
+				font-size: $font-size-xx-large;
+			}
+			&-text{
+				font-size: $font-size-x-large;
+			}
+		}
+	}
+	.contact-banner{
+		padding:50px 0;
+	}
+// ---------------------------------------
+//               Reservation
+// ---------------------------------------	
+
+	#reservationpage{
+	    .about-us{
+	        .image-holder{
+	        	margin-top: 30px;
+	        }
+		}
+	}
+
+// }
+

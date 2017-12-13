@@ -1,0 +1,228 @@
+@media (max-width: 991px){
+	.topheader{
+        font-size: $font-size-small;
+		&-cart{
+			margin:0 12px;
+		}
+		&-social{
+			margin-right:12px;
+		}
+	}
+    .account-info-name{
+            font-size: $font-size-extra-small;
+    }
+    nav{
+        .logo{
+            margin:25px 0;
+        }
+        i.fa-bars{
+            display: block;
+            margin-top: 45px;
+            font-size: 18px;
+            color: #feb518;
+            border: 2px solid #feb518;
+            width: 40px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+        }
+        ul{
+            display: block;
+            background:#272727;
+            width: 300px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: -310px;
+            z-index: 999;
+            transition: all 500ms ease;
+            .closer{
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: rgba(255,255,255,0.80);
+                text-align: center;
+                line-height: 30px;
+                cursor: pointer;
+            }
+            .logo-mobile{
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            li{
+                display: block;
+                margin:0;
+                &:nth-child(10){
+                    a{
+                        border-bottom:1px solid #888;
+                    }
+                }
+                &:last-child{text-align:center;}
+                a{
+                    padding:10px 20px;  
+                    border-top:1px solid #888;
+                    color:$text-color-white!important;
+                    &.active{
+                        background:$text-color-descript;
+                    }
+                }
+
+            }
+        }    
+    }
+    .banner{
+        .owl-item{
+            .banner-caption{
+                img{
+                    width: 150px;
+                }
+                &-title{
+                    font-size:$font-size-x-large;
+                }
+                &-text{
+                    font-size: $font-size-extra-small;
+                }
+                .button-reservation{
+                   padding:5px 30px;
+                }
+            }
+        }  
+    }
+
+    .about{
+        padding:60px 0;
+    }
+    .menu{
+        &-intro{
+            padding:170px 0;
+        }
+        &-list{
+            transform: translateY(170px);
+        }
+        .menu-item-dining{
+            padding-left:110px;
+            &-image{
+                width: 85px;
+            }
+        }   
+    }
+    .special{
+        &-box{
+            &-text{
+                font-size:$font-size-small;
+            }
+        }
+    }
+    .sale{padding:60px 0;}
+    .reservation{padding:90px 0;}
+
+    .testimonial{
+        padding:60px 0;
+        #testimonial-slide{
+            .owl-item{
+                q {
+                    font-size: $font-size-regular;
+                    line-height: $line-height-main; 
+                }
+            }
+        }
+    }
+    .topfooter {
+        padding: 50px 0;
+        .topfooter-col1-address{
+            padding-top:75px;
+        }
+    
+    }
+    .bottomfooter {
+    padding: 30px 0;
+    }
+
+    section.about-us{
+        .menu-intro{
+            padding:100px 0;
+        }
+        .about-intro{
+            padding:80px 0;
+            .image-holder{
+                margin-top: 70px;
+            }
+        }
+    }
+    section.service{
+        .menu-intro{
+            padding:100px 0;
+        }
+    }
+    section.chef-master{
+        .sale-intro{
+            margin-top: 30px;
+        }
+    }
+    .contact-banner{
+        padding:40px 0;
+        .contact-banner-title{
+            font-size: $font-size-x-regular;
+        }
+    }
+
+#reservationpage{
+    .reservation{
+        &-intro{
+            &-title{
+                font-size: $font-size-xx-large;
+            }
+            &-text{
+                font-size: $font-size-x-large ;
+            }
+        }
+    }
+    .about-us{
+        .image-holder{
+            margin-top: 130px;
+        }
+    }
+}
+// ---------------------------------------
+//                Contact
+// ---------------------------------------
+#contactpage{
+    .menu-intro{
+        &-title{
+            font-size:$font-size-xx-large;
+        }
+        &-text{
+            font-size:$font-size-x-large;
+        }
+    }
+}
+// ---------------------------------------
+//                Shopping-cart
+// ---------------------------------------
+.shopping{
+    .menu-intro{
+        padding:120px 0;
+    }
+}
+// ---------------------------------------
+//                Checkout
+// ---------------------------------------
+#checkoutpage{
+    .menu-intro {
+        padding: 120px 0;
+    }
+    .checkout-customer-login a{
+        padding:5px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+}

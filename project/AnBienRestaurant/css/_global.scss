@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family:$font-roboto-regular;
+	color: $text-color-descript;
+	font-size: $font-size-main;
+	line-height: $line-height-main;
+	text-decoration: none;
+	overflow-x:hidden;
+}
+h1,h2,h3,h4,h5,h6{
+	text-transform: capitalize;
+}
+h3{
+	color: $text-color-heading;
+}
+/*======link=======*/
+a:link{
+	color: $text-color-heading;
+	text-decoration: none;
+	outline: none;
+	text-transform: capitalize;
+}
+a:visited{color: $text-color-heading;}
+a:hover{color: $text-color-heading;text-decoration: none;}
+a:active{color: $text-color-heading;}
+/*=======other========*/
+.clear{
+	clear: both !important;
+}

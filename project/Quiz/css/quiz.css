@@ -1,0 +1,163 @@
+
+#quiz
+{
+	width: 800px;
+	height: 415px;
+	margin-top: 50px;
+	padding: 5px 25px;
+	background: url("nice.gif");
+	position: absolute;
+	z-index: 1;
+}
+#result{
+	width: 850px;
+	height: 425px;
+	margin-top: 50px;
+	position: absolute;
+	top:0;
+	left: 0px;
+	z-index: 0;
+	background: url("nice.gif");
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 35px;
+	color: #126fbf;
+	font-family: Caveat Brush;
+}
+.wrapper{
+	width: 800px;
+	height: 415px;
+	margin:auto;
+	position: relative;
+}
+#replay{
+	display: none;
+	position: absolute;
+	top: 80%;
+	left: 46%;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	width: 140px;
+	height: 40px;
+	cursor: pointer;
+	background: orange;
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+}
+#title{
+	font-family: 'Caveat Brush', cursive;
+	font-size: 35px;
+	color:#6aa7dc;
+}
+#question{
+	text-align: center;
+	font-size: 21px;
+	font-family: tahoma;
+	margin-bottom: 35px;
+	width: 800px;
+	height: 42px;
+	background: #126fbf;
+	color: white;
+	padding-top: 10px;
+}
+label{
+	width: 396px;
+	height: 40px;
+	margin: -5px 15px 14px 0px;
+	float:left;
+	font-size: 15px;
+	background: #2badd8;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	/* border-radius: 20px; */
+	margin-right: 8px;
+}
+label:nth-child(4n){margin-right: 0;}
+label:hover{
+	background: #48c1e8;
+}
+input{
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	width: 20px;
+	height: 16px;
+}
+button#next{
+	font-family: tahoma;
+	width: 120px;
+	height: 35px;
+	background: #337ab7;
+	margin: 10px;
+	cursor: pointer;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	border: none;
+	font-weight: 700;
+}
+button#theme{
+	width: 45px;
+	height: 45px;
+	border: none;
+	cursor: pointer;
+	background:rgb(6, 121, 102);
+	position: relative;
+	top: 235px;
+	background-image:url("https://s-media-cache-ak0.pinimg.com/originals/da/41/9b/da419b6361868d5414eb2677fc2ed082.gif");
+	background-size: cover;
+	border-radius: 50%;
+}
+button#theme:focus{
+	outline: none;
+}
+button#next{
+	margin: 10px 0px 0 678px;
+}
+button#next:hover {
+	background: orange;
+}
+button#next:focus{
+	outline: none;
+}
+#messenger{
+	text-align: center;
+	color:red;
+	margin: 0;
+	font-family: 'Caveat Brush', cursive;
+	font-size: 19px;
+	position: relative;
+	bottom: 30px;
+	left: 433px;
+	display: inline-block;
+}
+span {
+	padding-top: 9px;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	font-size: arial;
+	color: #fff;
+}
+
+input[type=radio]:checked + label{background: #1794bb; }
+
+.active{
+	background:#CB8306!important;
+	color: #f5f5f5!important;
+}
+.activespan{
+	color:#f5f5f5!important;
+}
+.noti{
+	color:blue!important;
+}
+.radius{
+	border-radius: 30px;
+}

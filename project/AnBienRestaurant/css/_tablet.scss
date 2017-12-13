@@ -1,0 +1,220 @@
+@media (max-width: 767px){
+	.topheader{
+		&-cart{
+			margin:0 30px;
+		}
+		&-hotline{
+			display: block;
+			border-style:solid none solid none;
+			border-width:1px;
+    		padding: 8px 0;
+    		border-color:$text-color-white;
+		}
+	}
+	.banner{
+		.owl-item{
+			.banner-caption{
+				width: 95%;
+	            &-title{
+	                font-size:25px;
+	            }
+	            &-text{
+	                font-size: $font-size-extra-small;
+	            }
+	            a.button-reservation{
+	            	margin-top: 0;
+	            }
+	        }
+		}
+	}
+	.menu{
+		&-item{
+			padding:60px 0;
+			}
+		&-intro{
+			&-title{font-size:$font-size-x-large }
+			&-text{font-size:$font-size-x-large}
+		}
+	}
+	.sale{
+		.sale-item-box-title{margin-top:0;}
+	}
+	.chef{
+		.chef-group-item:nth-child(2){
+			margin:30px 0;
+		}
+	}
+	.testimonial{
+		#testimonial-slide{
+            .owl-item{
+				&-text{
+					padding:0 20px;
+					cite{
+					font-size: $font-size-large;
+					}
+				}	
+			}
+		}
+	}
+	.blog {
+    padding: 60px 0;
+	}
+	.topfooter{
+		.topfooter-col1-address {
+		    padding-top: 0;
+		    margin-bottom: 30px;
+		} 
+	}
+	section.about-us{
+		.menu-intro{
+			padding:90px 0;
+			&-title{
+				font-size: $font-size-x-large;
+			}
+			&-text{
+				font-size: $font-size-large;
+			}
+		}
+	}
+	section.service{
+		.menu-intro{
+			&-title{
+				font-size: $font-size-x-large;
+			}
+			&-text{
+				font-size: $font-size-large;
+			}
+		}
+		.about{
+			&-box:nth-child(2){
+				border-top:1px dashed $text-color-descript;
+				border-bottom:1px dashed $text-color-descript;
+				margin:15px 0;
+				padding:15px 0;
+			}
+		}
+	}
+	.chef-master{
+			padding:20px 0;
+	}
+	
+	.tablebooking{
+		.sale-intro-title{
+			font-size: $font-size-x-large;
+		}
+		.sale-intro-text{
+			font-size: $font-size-large;
+		}
+	}
+	#reservationpage{
+    .reservation{
+    	padding:120px 0;
+        .reservation-intro-title{
+        	font-size: $font-size-x-large;
+        }
+        .reservation-intro-text{
+			font-size: $font-size-large;
+        }
+    }
+    .about-us{
+        .image-holder{
+        	margin-top: 10px;
+        }
+    }
+}
+// ---------------------------------------
+//                Contact
+// ---------------------------------------
+.contact-us{
+    padding:60px 0;
+    text-align: center;
+    iframe{
+        height: 300px;
+    }
+}
+.location{
+	padding:80px 0;
+	text-align:center;
+	&-box{
+		.col-xs-12.col-md-4:nth-child(2){
+			margin:30px 0;
+		}
+		address{
+			i.fa{
+				position: static;
+			}
+		}	
+	}
+	
+}
+#contactpage{
+    .menu-intro{
+    	padding:120px 0;
+        &-title{
+            font-size:$font-size-x-large;
+        }
+        &-text{
+            font-size:$font-size-large;
+        }
+    }
+}
+// ---------------------------------------
+//                Menu
+// ---------------------------------------
+.dishes{
+	padding: 80px 0;
+}
+// ---------------------------------------
+//                blog
+// ---------------------------------------
+#navigation{
+	margin-bottom:30px;
+}
+// ---------------------------------------
+//                post
+// ---------------------------------------
+.post{
+	.commentform{
+		margin-bottom: 60px;
+	}
+}
+
+// ---------------------------------------
+//                shop
+// ---------------------------------------
+section.shoppage{
+	.menu-intro{
+        padding:120px 0;
+    }
+	.shop{
+		padding:60px 0;
+	}
+}
+// ---------------------------------------
+//                product
+// ---------------------------------------
+.product-detail-title{
+	h2{
+		margin-top: 20px;
+	}
+}
+// ---------------------------------------
+//                Checkout
+// ---------------------------------------
+.checkout{
+    &-customer{
+        &-login{
+            padding:0 20px;
+            a{
+                right: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+}
