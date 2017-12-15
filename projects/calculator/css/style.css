@@ -2,7 +2,7 @@
 	max-width: 335px;
 	height: 435px;
 	margin: auto;
-	border: 2px solid gray;
+	box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
 	padding: 20px;
 	background: aliceblue;
 	}
