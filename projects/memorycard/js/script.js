@@ -1,16 +1,17 @@
+$(document).ready(function() {
+	
+var cards = [1,2,3,4,5,6,7,8,9],
+	current = null,
+	count = 0,
+	time = 100,
+	click = new Audio('sound/clicked.wav'),
+	error = new Audio('sound/beep-03.wav'),
+	success = new Audio('sound/clicked2.wav'),
+	fail = new Audio('sound/fail.mp3'),
+	success2 = new Audio('sound/applause.mp3'),
+	nhacnen = new Audio('sound/europa.mp3');
 
-var cards = [1,2,3,4,5,6,7,8,9];
-
-var current = null;
-var count = 0;
-var time = 100;
-var click = new Audio('clicked.wav');
-var error = new Audio('beep-03.wav');
-var success = new Audio('clicked2.wav');
-var fail = new Audio('fail.mp3');
-var success2 = new Audio('applause.mp3');
-var nhacnen = new Audio('europa.mp3');
-
+//shuffle card
 function shuffle(array) {
 	var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -30,12 +31,11 @@ function shuffle(array) {
     return array;
 }
 
+//card flipped
 function clicked(){
-
 	if($(this).hasClass('flipped')){
 		return;
 	}
-
 	$(this).toggleClass('flipped');
 	click.play();
 
@@ -70,6 +70,7 @@ function clicked(){
 	}
 };
 
+//play
 $('#go').on('click',function(){
 	$('.popup').hide();
 	$('.win').hide();
@@ -95,15 +96,15 @@ $('#go').on('click',function(){
 	},560);
 });
 
+//play again
 $('#again').on('click', function(){
 	window.location.href = 'index.html';
 })
 
+//load card in html
 $(function() {
 	cards = cards.concat(cards);
-
 	cards = shuffle(cards);
-
 	var html = '';
 	for(var i = 0; i < cards.length ; i++){
 		html += '<div class="card" data-name="' + cards[i] + '">' + 
@@ -111,10 +112,10 @@ $(function() {
 		'<div class="back"><img src="image/pretty.jpg"/></div>' + 
 		'</div>';
 	}
-
 	$('.grid').html(html);
 
 	$('.card').on('click', clicked);
 
 });
 
+});

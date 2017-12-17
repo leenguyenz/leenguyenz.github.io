@@ -1,24 +1,26 @@
+$(document).ready(function() {
+	
 var allQuestion = [{
-	question: "Sông dài nhất thế giới ?",
-	answer : {ans1: "Amazon",ans2: "Trường Giang",ans3: "Nile",ans4: "Mekong"},
-	correct: "3"
-},{
-	question: "Thủ đô của Pháp ?",
-	answer : { ans1: "Paris", ans2: "Tokyo", ans3: "Madrid", ans4: "Berlin"},
-	correct: "1"
-},{
-	question: "Sat trong tiếng Anh là thứ mấy trong tuần?",
-	answer : {ans1: "Thứ 3",ans2: "Thứ 5",ans3: "Thứ 7",ans4: "Chủ nhật"},
-	correct: "3"
-},{
-	question: "Thăng Long Hà Nội 1000 tuổi vào năm nào?",
-	answer : {ans1: "2009",ans2: "2010",ans3: "2011",ans4: "2012"},
-	correct: "2"
-},{
-	question: "Ngọn núi nào cao nhất Nhật Bản?",
-	answer : {ans1: "Himalchuli", ans2: "Everest", ans3: "Fansipan", ans4: "Phú Sĩ"},
-	correct: "4"
-}];
+		question: "Sông dài nhất thế giới ?",
+		answer : {ans1: "Amazon",ans2: "Trường Giang",ans3: "Nile",ans4: "Mekong"},
+		correct: "3"
+	},{
+		question: "Thủ đô của Pháp ?",
+		answer : { ans1: "Paris", ans2: "Tokyo", ans3: "Madrid", ans4: "Berlin"},
+		correct: "1"
+	},{
+		question: "Sat trong tiếng Anh là thứ mấy trong tuần?",
+		answer : {ans1: "Thứ 3",ans2: "Thứ 5",ans3: "Thứ 7",ans4: "Chủ nhật"},
+		correct: "3"
+	},{
+		question: "Thăng Long Hà Nội 1000 tuổi vào năm nào?",
+		answer : {ans1: "2009",ans2: "2010",ans3: "2011",ans4: "2012"},
+		correct: "2"
+	},{
+		question: "Ngọn núi nào cao nhất Nhật Bản?",
+		answer : {ans1: "Himalchuli", ans2: "Everest", ans3: "Fansipan", ans4: "Phú Sĩ"},
+		correct: "4"
+	}];
 
 var Quiz = $(function() {
 	
@@ -28,9 +30,7 @@ var Quiz = $(function() {
 	//Load answer and question
 	function loadQuestion(index){ 
 		$("#title").html("Quiz number "  + (questionIndex + 1) + " / 5");
-
 		$("#question").html(allQuestion[index].question);
-
 		$("#a1").html(allQuestion[index].answer.ans1);
 		$("#a2").html(allQuestion[index].answer.ans2);
 		$("#a3").html(allQuestion[index].answer.ans3);
@@ -138,14 +138,7 @@ var Quiz = $(function() {
 			$('label').removeClass('active');
 		});
 	});
-
-
-
-
-
-
-
-
+});
 
 
 });

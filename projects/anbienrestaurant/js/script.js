@@ -1,5 +1,6 @@
 ﻿  $(function(){
 
+    //load wowjs
     new WOW().init();
 
     //gallery

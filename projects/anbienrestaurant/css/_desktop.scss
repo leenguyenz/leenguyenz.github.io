@@ -1,36 +1,18 @@
-// @media (max-width: 1199px){
+@media (max-width: 1199px){
 // ---------------------------------------
 //                Homepage
-// ---------------------------------------
-	// .banner{
-	// 	.banner-caption{
-	// 		img{
-	// 			width: 30%;
-	// 		}
-	// 		&-title{
-	// 			font-size:$font-size-xxx-large;
-	// 			line-height: $line-height-x-large;
-	// 		}
-	// 		&-text{
-	// 			font-size: $font-size-small;
-	// 			line-height: $line-height-main;
-	// 		}
-	// 		.button-reservation{
-	// 			margin-top:0;
-	// 		}
-	// 	}
-	// }
-// ---------------------------------------
-//                AboutPage
 // ---------------------------------------
 	nav{
 		ul{
 			li{
-				margin-left: 23px;
+				margin-left: 18px;
 			}
 		}
 	}
-
+// ---------------------------------------
+//                AboutPage
+// ---------------------------------------
+	
 	section.about-us{
 		.menu-intro{
 			padding:120px 0;
@@ -70,5 +52,5 @@
 		}
 	}
 
-// }
+}
 
