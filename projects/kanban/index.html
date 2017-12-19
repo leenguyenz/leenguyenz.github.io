@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kanban Board</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="plugins\materialize\css\materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Kanban Board</a>
+    </div>
+  </nav>
+
+  <section class="container">
+	<div class="row">
+		<div class="col s4">
+			<div class="card">
+				<h5 class="orange text-white">Todo <span class="count"></span></h5>
+			    <div class="collection sort" id="todo"></div>
+			    <div class="input-field">
+			      <input type="text" id="newjob" onkeydown="app.newJob(event, 'todo', this)">
+			      <label for="newjob">Add a new job</label>
+			    </div>
+			</div>
+		</div>
+
+		<div class="col s4">
+			<div class="card">
+				<h5 class="purple text-white">Doing <span class="count"></span></h5>
+			    <div class="collection sort" id="doing"></div>
+			    <div class="input-field">
+			      	<input type="text" id="newjob" onkeydown="app.newJob(event, 'doing', this)">
+			      	<label for="newjob">Add a new job</label>
+			    </div>
+			</div>
+		</div>
+
+		<div class="col s4">
+			<div class="card">
+				<h5 class="blue text-white">Done <span class="count"></span></h5>
+			    <div class="collection sort" id="done"></div>
+			    <div class="input-field">
+			      	<input type="text" id="newjob" onkeydown="app.newJob(event, 'done', this)">
+			      	<label for="newjob">Add a new job</label>
+			    </div>
+			</div>
+		</div>
+	</div>
+  </section>
+  <div id="modal-comfirm" class="modal">
+    <div class="modal-content">
+      <h4>Comfirm Delete</h4>
+      <p>Are you sure to delete this job?</p>
+    </div>
+    <div class="modal-footer">
+    	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    	<a href="#!" class="modal-action waves-effect waves-light btn" id="btn-delete">Agree</a> 
+    </div>
+  </div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+	<script src="plugins/materialize/js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

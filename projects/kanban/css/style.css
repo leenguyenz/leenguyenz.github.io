@@ -1,0 +1,56 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+  color: #888;
+  box-sizing: border-box; }
+
+.container {
+  margin-top: 50px; }
+  .container .card h5 {
+    font-size: 18px;
+    padding: 15px 20px 15px;
+    margin: 0;
+    font-weight: 400;
+    color: #fff; }
+  .container .card .collection {
+    margin: 0;
+    overflow: inherit; }
+    .container .card .collection .ui-state-highlight {
+      min-height: calc(1.5rem + 20px);
+      background: #fafafa; }
+    .container .card .collection .dragging {
+      transform: rotate(4deg); }
+    .container .card .collection-item {
+      cursor: move;
+      transition: 0;
+      color: rgba(0, 0, 0, 0.8);
+      position: relative; }
+      .container .card .collection-item i.fa {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+        opacity: 0;
+        cursor: pointer;
+        padding: 6px; }
+        .container .card .collection-item i.fa:hover {
+          background: #e8e8e8; }
+      .container .card .collection-item:hover i.fa {
+        opacity: 1; }
+  .container .card .input-field {
+    background: #fff;
+    padding: 20px;
+    margin: 0; }
+    .container .card .input-field label {
+      top: 25px;
+      left: 20px; }
+
+.modal {
+  width: 35%; }
+  .modal h4 {
+    font-size: 20px;
+    color: #333; }
+  .modal p {
+    font-size: 16px;
+    color: #777; }
+
+/*# sourceMappingURL=style.css.map */
