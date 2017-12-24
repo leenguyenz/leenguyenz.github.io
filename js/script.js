@@ -23,7 +23,7 @@ increment(3,50);
 increment(4,90);
 increment(5,85);
 increment(6,75);
-increment(7,75);
+increment(7,60);
 increment(8,70);
 increment(9,65);
 
