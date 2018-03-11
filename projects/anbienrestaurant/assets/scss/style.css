@@ -820,7 +820,7 @@ a:active {
         background: rgba(13, 13, 13, 0.55); }
       .banner .owl-items .banner-caption {
         position: absolute;
-        top: 50%;
+        top: 53%;
         left: 50%;
         z-index: 99;
         width: 70%;
@@ -834,23 +834,25 @@ a:active {
         .banner .owl-items .banner-caption a {
           color: #e8e8e8; }
         .banner .owl-items .banner-caption-title {
-          font-size: 48px;
+          font-size: 36px;
           font-family: oswald_bold;
           line-height: 50px; }
+        .banner .owl-items .banner-caption-text {
+          font-size: 18px; }
         .banner .owl-items .banner-caption .button-reservation:hover {
           color: #feb518; }
     .banner .owl-nav .owl-next, .banner .owl-nav .owl-prev, .banner .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-prev, .gallery-carousel-inner #gallery-carousel-main .banner .owl-nav .owl-prev {
       position: absolute;
       font-size: 25px;
       right: 20px;
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       border: 2px solid #e8e8e8;
       color: #e8e8e8;
       top: 52%;
       margin: 0 30px;
       text-align: center;
-      line-height: 45px; }
+      line-height: 35px; }
       .banner .owl-nav .owl-next:hover, .banner .owl-nav .owl-prev:hover, .banner .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-prev:hover, .gallery-carousel-inner #gallery-carousel-main .banner .owl-nav .owl-prev:hover {
         background: #feb518;
         border-color: #feb518;
@@ -1110,7 +1112,7 @@ a:active {
       .sale-item-box-image img {
         border-radius: 50%;
         position: relative;
-        display: block; }
+        display: inline-block; }
       .sale-item-box-hover {
         width: 206px;
         height: 206px;
@@ -1252,27 +1254,27 @@ a:active {
       width: 100%;
       height: 100%;
       background: rgba(13, 13, 13, 0.55); }
-    .testimonial #testimonial-slide .owl-item {
+    .testimonial #testimonial-slide .testimonial-item {
       text-align: center; }
-      .testimonial #testimonial-slide .owl-item img {
+      .testimonial #testimonial-slide .testimonial-item img {
         margin-bottom: 30px;
         width: 120px;
         height: 120px;
         border-radius: 50%;
         display: inline-block; }
-      .testimonial #testimonial-slide .owl-item-text {
+      .testimonial #testimonial-slide .testimonial-item-text {
         padding: 0 80px; }
-        .testimonial #testimonial-slide .owl-item-text q {
+        .testimonial #testimonial-slide .testimonial-item-text q {
           color: #e8e8e8;
           line-height: 32px;
           font-size: 20px;
           margin-bottom: 30px; }
-        .testimonial #testimonial-slide .owl-item-text cite {
+        .testimonial #testimonial-slide .testimonial-item-text cite {
           font-family: dancing_bold;
           font-size: 30px;
           line-height: 50px;
           color: #feb518; }
-          .testimonial #testimonial-slide .owl-item-text cite:before {
+          .testimonial #testimonial-slide .testimonial-item-text cite:before {
             content: "- ";
             color: #e8e8e8; }
     .testimonial #testimonial-slide .owl-dots {
@@ -2412,6 +2414,9 @@ a:active {
   nav ul li {
     margin-left: 18px; }
 
+  .banner .owl-items .banner-caption-text {
+    font-size: 16px; }
+
   section.about-us .menu-intro {
     padding: 120px 0; }
   section.about-us .about-intro-text {
@@ -2522,7 +2527,7 @@ a:active {
 
   .testimonial {
     padding: 60px 0; }
-    .testimonial #testimonial-slide .owl-item q {
+    .testimonial #testimonial-slide .testimonial-item q {
       font-size: 16px;
       line-height: 24px; }
 
@@ -2582,13 +2587,23 @@ a:active {
     border-color: #e8e8e8; }
 
   .banner .owl-item .banner-caption {
-    width: 95%; }
+    width: 95%;
+    top: 45%; }
     .banner .owl-item .banner-caption-title {
       font-size: 25px; }
     .banner .owl-item .banner-caption-text {
       font-size: 12px; }
     .banner .owl-item .banner-caption a.button-reservation {
-      margin-top: 0; }
+      margin-top: 0;
+      padding: 5px 15px; }
+
+  .about-item {
+    margin-bottom: 30px; }
+    .about-item a {
+      display: block;
+      width: 100%; }
+      .about-item a img {
+        width: 100%; }
 
   .menu-item {
     padding: 60px 0; }
@@ -2603,9 +2618,9 @@ a:active {
   .chef .chef-group-item:nth-child(2) {
     margin: 30px 0; }
 
-  .testimonial #testimonial-slide .owl-item-text {
+  .testimonial #testimonial-slide .testimonial-item-text {
     padding: 0 20px; }
-    .testimonial #testimonial-slide .owl-item-text cite {
+    .testimonial #testimonial-slide .testimonial-item-text cite {
       font-size: 24px; }
 
   .blog {
@@ -2752,9 +2767,9 @@ a:active {
   .chef {
     padding: 60px 0; }
 
-  .testimonial #testimonial-slide .owl-item-text {
+  .testimonial #testimonial-slide .testimonial-item-text {
     padding: 0; }
-    .testimonial #testimonial-slide .owl-item-text q {
+    .testimonial #testimonial-slide .testimonial-item-text q {
       font-size: 14px;
       line-height: 24px; }
 

@@ -15,6 +15,7 @@
 		.owl-item{
 			.banner-caption{
 				width: 95%;
+				top: 45%;
 	            &-title{
 	                font-size:25px;
 	            }
@@ -23,10 +24,25 @@
 	            }
 	            a.button-reservation{
 	            	margin-top: 0;
+	            	padding: 5px 15px;
 	            }
 	        }
 		}
 	}
+
+	.about{
+		&-item{
+			margin-bottom: 30px;
+			a{
+				display:block;
+				width: 100%;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+
 	.menu{
 		&-item{
 			padding:60px 0;
@@ -46,7 +62,7 @@
 	}
 	.testimonial{
 		#testimonial-slide{
-            .owl-item{
+            .testimonial-item{
 				&-text{
 					padding:0 20px;
 					cite{
