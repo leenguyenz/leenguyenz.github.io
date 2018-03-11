@@ -1,0 +1,2864 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: roboto_regular;
+  color: #888;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize; }
+
+h3 {
+  color: #333; }
+
+/*======link=======*/
+a:link {
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize; }
+
+a:visited {
+  color: #333; }
+
+a:hover {
+  color: #333;
+  text-decoration: none; }
+
+a:active {
+  color: #333; }
+
+/*=======other========*/
+.clear {
+  clear: both !important; }
+
+@font-face {
+  font-family: fontawesome;
+  src: url("../fonts/fontawesome-webfont.ttf"); }
+@font-face {
+  font-family: dancing_regular;
+  src: url("../fonts/DancingScript-Regular.ttf"); }
+@font-face {
+  font-family: dancing_bold;
+  src: url("../fonts/DancingScript-Bold.ttf"); }
+@font-face {
+  font-family: oswald_bold;
+  src: url("../fonts/Oswald-Bold.ttf"); }
+@font-face {
+  font-family: oswald_regular;
+  src: url("../fonts/Oswald-Regular.ttf"); }
+@font-face {
+  font-family: oswald_light;
+  src: url("../fonts/Oswald-Light.ttf"); }
+@font-face {
+  font-family: roboto_bold;
+  src: url("../fonts/RobotoSlab-Bold.ttf"); }
+@font-face {
+  font-family: roboto_regular;
+  src: url("../fonts/RobotoSlab-Regular.ttf"); }
+.button-reservation {
+  display: inline-block;
+  background: #feb518;
+  font-size: 13px;
+  padding: 9px 35px;
+  border: 2px solid #feb518;
+  text-transform: capitalize;
+  margin-top: 24px;
+  border-radius: 3px;
+  cursor: pointer; }
+  .button-reservation:hover {
+    background: none;
+    transition: all 300ms ease; }
+
+.active {
+  color: #feb518 !important; }
+
+.visible {
+  display: block !important; }
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  animation: fadeInDown 500ms linear 1; }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background: #000;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 5;
+  cursor: pointer;
+  display: none; }
+  .back-to-top a {
+    color: #fff; }
+  .back-to-top:hover {
+    background: #feb518;
+    transition: all 500ms ease; }
+
+.laclu {
+  animation: laclu 1s forwards;
+  transform-origin: 50% 0; }
+
+@-webkit-keyframes laclu {
+  0% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(15deg); }
+  40% {
+    transform: rotate(-10deg); }
+  60% {
+    transform: rotate(5deg); }
+  80% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(0deg); } }
+.fadein {
+  animation: fadein 1s forwards; }
+
+.fadein:nth-child(1) {
+  animation-delay: 0; }
+
+.fadein:nth-child(2) {
+  animation-delay: 0.2s; }
+
+.fadein:nth-child(3) {
+  animation-delay: 0.4s; }
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fadeinup {
+  animation: fadeinup 1s forwards; }
+
+.fadeinup:nth-child(1) {
+  animation-delay: 0; }
+
+.fadeinup:nth-child(2) {
+  animation-delay: 0.2s; }
+
+.fadeinup:nth-child(3) {
+  animation-delay: 0.4s; }
+
+@-webkit-keyframes fadeinup {
+  0% {
+    transform: translateY(30px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+.fadeinleft {
+  animation: fadeinleft 1s forwards; }
+
+@-webkit-keyframes fadeinleft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+.fadeinright {
+  animation: fadeinright 2s forwards; }
+
+.fadeinright:nth-child(1) {
+  animation-delay: 0; }
+
+.fadeinright:nth-child(2) {
+  animation-delay: 0.1s; }
+
+.fadeinright:nth-child(3) {
+  animation-delay: 0.2s; }
+
+.fadeinright:nth-child(4) {
+  animation-delay: 0.3s; }
+
+.fadeinright:nth-child(5) {
+  animation-delay: 0.4s; }
+
+.fadeinright:nth-child(6) {
+  animation-delay: 0.5s; }
+
+@-webkit-keyframes fadeinright {
+  0% {
+    transform: translateX(10px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+@media (max-width: 1920px) {
+  .topheader {
+    background: #222;
+    font-size: 14px;
+    color: #e8e8e8; }
+    .topheader a {
+      color: #e8e8e8; }
+      .topheader a:hover {
+        color: #feb518;
+        transition: all 300ms ease; }
+    .topheader-social {
+      line-height: 40px;
+      margin-right: 20px; }
+      .topheader-social a {
+        padding-right: 10px; }
+    .topheader-opening {
+      line-height: 40px; }
+    .topheader-cart {
+      margin: 0 30px;
+      position: relative;
+      font-size: 16px; }
+      .topheader-cart:after {
+        content: '3';
+        position: absolute;
+        top: -5px;
+        left: 7px;
+        height: 15px;
+        width: 15px;
+        text-align: center;
+        font-size: 10px;
+        background: #feb518;
+        border-radius: 50%;
+        line-height: 15px; }
+    .topheader-account {
+      border: 1px solid #e8e8e8;
+      padding: 2px 5px; }
+    .topheader .account-info {
+      display: none;
+      position: relative; }
+      .topheader .account-info img {
+        width: 35px;
+        border-radius: 50%; }
+      .topheader .account-info-manager {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        z-index: 99;
+        background: #333;
+        width: 160px;
+        text-align: center; }
+        .topheader .account-info-manager a {
+          padding: 5px 0;
+          display: inline-block; }
+
+  .account-blur {
+    background: #00000090;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s; }
+    .account-blur.blur {
+      opacity: 1;
+      visibility: visible; }
+  .account-box {
+    position: fixed;
+    width: 380px;
+    height: auto;
+    top: -100%;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease; }
+    .account-box .inner-box {
+      position: relative; }
+    .account-box-login, .account-box-signup {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid rgba(254, 181, 24, 0.5);
+      width: 100%;
+      padding: 20px;
+      background: #fff; }
+      .account-box-login .x, .account-box-signup .x {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 16px;
+        color: #feb518;
+        cursor: pointer; }
+      .account-box-login h3, .account-box-signup h3 {
+        font-size: 36px;
+        color: #feb518;
+        text-transform: uppercase;
+        font-family: oswald_bold;
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 24px; }
+        .account-box-login h3:after, .account-box-signup h3:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          margin-top: 10px;
+          background: -webkit-linear-gradient(left, rgba(254, 181, 24, 0) 0%, rgba(254, 181, 24, 0.8) 20%, #feb518 53%, rgba(254, 181, 24, 0.8) 79%, rgba(254, 181, 24, 0) 100%); }
+      .account-box-login form .form-group, .account-box-signup form .form-group {
+        position: relative;
+        margin-bottom: 10px; }
+      .account-box-login form label, .account-box-signup form label {
+        font-size: 15px; }
+      .account-box-login form label.keep-login, .account-box-signup form label.keep-login {
+        font-size: 13px;
+        cursor: pointer; }
+      .account-box-login form input, .account-box-signup form input {
+        border: 1px solid #b2b2b2;
+        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+        padding: 8px 0px 8px 32px; }
+        .account-box-login form input:focus, .account-box-signup form input:focus {
+          border: 1px solid #feb518;
+          transition: 0.3s;
+          background: rgba(238, 236, 240, 0.5); }
+        .account-box-login form input::-webkit-input-placeholder, .account-box-signup form input::-webkit-input-placeholder {
+          font-size: 13px;
+          color: #d0d0d0; }
+      .account-box-login form input#keep-login, .account-box-signup form input#keep-login {
+        margin-right: 8px; }
+      .account-box-login form i.fa, .account-box-signup form i.fa {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        font-size: 16px;
+        color: #feb518; }
+      .account-box-login form button, .account-box-signup form button {
+        padding: 10px 50px;
+        margin: 0 0 10px 0;
+        color: #e8e8e8;
+        font-size: 16px; }
+        .account-box-login form button:hover, .account-box-signup form button:hover {
+          color: #feb518; }
+      .account-box-login p, .account-box-signup p {
+        margin: 0;
+        border-top: 1px solid #e8e8e8;
+        padding-top: 10px; }
+        .account-box-login p span, .account-box-signup p span {
+          border: 1px solid orange;
+          padding: 1px 11px;
+          color: orange;
+          cursor: pointer; }
+          .account-box-login p span:hover, .account-box-signup p span:hover {
+            color: #888;
+            border: 1px solid #888;
+            position: 0.3s; }
+    .account-box.visible {
+      opacity: 1;
+      visibility: visible;
+      top: 0%; }
+
+  nav {
+    width: 100%;
+    padding: 0 0;
+    overflow: auto;
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+    transition: all 500ms ease; }
+    nav .logo {
+      float: left;
+      margin-top: 20px; }
+    nav i.fa-bars {
+      display: none; }
+    nav ul {
+      float: right;
+      list-style: none;
+      margin: 0; }
+      nav ul .closer {
+        display: none; }
+      nav ul .logo-mobile {
+        display: none; }
+      nav ul li {
+        display: inline-block;
+        margin-left: 30px; }
+        nav ul li a {
+          padding: 40px 0;
+          color: #888;
+          display: block;
+          text-transform: capitalize; }
+          nav ul li a.active {
+            color: #feb518; }
+          nav ul li a:hover {
+            color: #feb518;
+            transition: all 300ms ease; }
+          nav ul li a.button-reservation:hover {
+            color: #888; }
+
+  .banner {
+    position: relative; }
+    .banner .owl-items {
+      position: relative; }
+      .banner .owl-items:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(13, 13, 13, 0.55); }
+      .banner .owl-items .banner-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        width: 70%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #e8e8e8; }
+        .banner .owl-items .banner-caption img {
+          width: 200px;
+          display: inline-block;
+          position: relative; }
+        .banner .owl-items .banner-caption a {
+          color: #e8e8e8; }
+        .banner .owl-items .banner-caption-title {
+          font-size: 48px;
+          font-family: oswald_bold;
+          line-height: 50px; }
+        .banner .owl-items .banner-caption .button-reservation:hover {
+          color: #feb518; }
+    .banner .owl-nav .owl-next, .banner .owl-nav .owl-prev, .banner .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-prev, .gallery-carousel-inner #gallery-carousel-main .banner .owl-nav .owl-prev {
+      position: absolute;
+      font-size: 25px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #e8e8e8;
+      color: #e8e8e8;
+      top: 52%;
+      margin: 0 30px;
+      text-align: center;
+      line-height: 45px; }
+      .banner .owl-nav .owl-next:hover, .banner .owl-nav .owl-prev:hover, .banner .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-prev:hover, .gallery-carousel-inner #gallery-carousel-main .banner .owl-nav .owl-prev:hover {
+        background: #feb518;
+        border-color: #feb518;
+        transition: all 300ms ease; }
+    .banner .owl-nav .owl-prev {
+      right: auto;
+      left: 20px; }
+    .banner .owl-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%); }
+      .banner .owl-dots .owl-dot {
+        display: inline-block;
+        text-align: center;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid #e8e8e8;
+        margin: 0 7px; }
+        .banner .owl-dots .owl-dot.active {
+          background: #feb518;
+          border-color: #feb518; }
+
+  .about {
+    padding: 90px 0; }
+    .about-item {
+      opacity: 0; }
+    .about-title {
+      font-family: oswald_regular;
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: capitalize; }
+      .about-title a:hover {
+        color: #feb518;
+        transition: all 300ms ease; }
+    .about-readmore {
+      margin: 0; }
+      .about-readmore a:hover {
+        color: #feb518;
+        transition: all 300ms ease; }
+
+  .menu-intro {
+    position: relative;
+    padding: 200px 0;
+    background: url("../images/7.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; }
+    .menu-intro:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(13, 13, 13, 0.55); }
+    .menu-intro-title {
+      font-family: dancing_bold;
+      font-size: 40px;
+      line-height: 50px;
+      color: #feb518;
+      position: relative;
+      z-index: 1; }
+    .menu-intro-text {
+      font-size: 36px;
+      font-family: roboto_bold;
+      line-height: 40px;
+      color: #e8e8e8;
+      text-transform: capitalize;
+      position: relative;
+      z-index: 2; }
+  .menu-list {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    transform: translateY(200px); }
+    .menu-list li {
+      display: inline-block; }
+      .menu-list li a {
+        color: #e8e8e8;
+        font-size: 16px;
+        padding: 0 10px; }
+        .menu-list li a.active {
+          color: #feb518; }
+        .menu-list li a:hover {
+          color: #feb518;
+          transition: all 300ms ease; }
+  .menu-item {
+    padding: 100px 0 75px 0; }
+    .menu-item-dining {
+      margin-bottom: 25px;
+      padding-top: 22px;
+      position: relative;
+      padding-left: 125px;
+      min-height: 90px; }
+      .menu-item-dining-image {
+        position: absolute;
+        left: 15px;
+        top: 0;
+        width: 90px;
+        height: 90px; }
+      .menu-item-dining-meal .dining-box {
+        border-bottom: 1px dashed #888;
+        font-family: oswald_regular;
+        font-size: 16px;
+        line-height: 32px;
+        text-transform: capitalize;
+        line-height: 12px;
+        margin-bottom: 10px;
+        color: #333; }
+        .menu-item-dining-meal .dining-box a:hover {
+          color: #feb518;
+          transition: all 300ms ease; }
+        .menu-item-dining-meal .dining-box-title, .menu-item-dining-meal .dining-box-price {
+          background: #fff;
+          padding-right: 10px;
+          transform: translateY(1px); }
+        .menu-item-dining-meal .dining-box-price {
+          padding-left: 10px; }
+      .menu-item-dining-meal .dinning-text {
+        margin: 0; }
+
+  .menu-item-dining-image .tag-new, .special .tag-new, .dishes .dish-image .tag-new, .shop-item-box .box-image .tag-new {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background: #feb518;
+    padding: 0 10px;
+    color: #333;
+    font-size: 12px;
+    line-height: 17px;
+    line-height: 18px; }
+
+  .special {
+    background: url("../images/bg_special_meal.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 65px 0px;
+    position: relative; }
+    .special:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(13, 13, 13, 0.55);
+      background: rgba(13, 13, 13, 0.7); }
+    .special-title {
+      font-family: oswald_bold;
+      font-size: 24px;
+      color: #e8e8e8;
+      text-transform: capitalize;
+      margin-bottom: 45px;
+      display: inline-block;
+      position: relative;
+      z-index: 20; }
+    .special .tag-new {
+      left: 10px; }
+    .special .owl-item {
+      position: relative; }
+    .special-box {
+      font-family: oswald_regular;
+      font-size: 16px;
+      line-height: 32px;
+      text-transform: capitalize;
+      color: #e8e8e8;
+      margin: 10px 0;
+      position: relative;
+      z-index: 22; }
+      .special-box a {
+        color: #e8e8e8; }
+        .special-box a:hover {
+          color: #feb518;
+          transition: all 300ms ease; }
+      .special-box-text {
+        color: #888;
+        padding: 0;
+        margin: 0; }
+    .special .owl-nav .owl-next, .special .owl-nav .owl-prev, .special .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-prev, .gallery-carousel-inner #gallery-carousel-main .special .owl-nav .owl-prev {
+      position: absolute;
+      top: -70px;
+      right: 20px;
+      width: 35px;
+      height: 35px;
+      border: 2px solid #e8e8e8;
+      color: #e8e8e8;
+      display: block;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+      z-index: 30; }
+      .special .owl-nav .owl-next:hover, .special .owl-nav .owl-prev:hover, .special .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-prev:hover, .gallery-carousel-inner #gallery-carousel-main .special .owl-nav .owl-prev:hover {
+        background: #feb518;
+        border-color: #feb518;
+        transition: all 300ms ease; }
+    .special .owl-nav .owl-prev {
+      left: auto;
+      right: 70px; }
+
+  .sale {
+    padding: 120px 0px 60px 0px; }
+    .sale-intro {
+      margin-bottom: 50px; }
+      .sale-intro-title {
+        font-family: dancing_bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #feb518; }
+      .sale-intro-text {
+        font-size: 24px;
+        font-family: roboto_bold;
+        line-height: 40px;
+        color: #333;
+        text-transform: capitalize; }
+    .sale-item-hours {
+      background: #403f41;
+      padding: 40px;
+      outline: 1px dashed #feb518;
+      outline-offset: -40px;
+      opacity: 0; }
+      .sale-item-hours-title {
+        color: #feb518;
+        margin-bottom: 40px;
+        font-size: 16px;
+        background: url("../images/title-bg.png") center center no-repeat;
+        padding-bottom: 16px; }
+      .sale-item-hours p {
+        color: #e8e8e8;
+        margin-bottom: 30px; }
+      .sale-item-hours-phone {
+        font-family: dancing_bold;
+        font-size: 24px;
+        line-height: 50px;
+        color: #feb518;
+        margin: 20px 0; }
+    .sale-item-box {
+      border-bottom: 1px solid #e8e8e8;
+      padding: 0 0 50px 0; }
+      .sale-item-box .box {
+        display: flex;
+        flex-direction: row-reverse; }
+      .sale-item-box:last-child {
+        border-bottom: none;
+        padding: 50px 0 0 0; }
+      .sale-item-box:hover .sale-item-box-hover {
+        opacity: 1;
+        transition: all 500ms ease; }
+      .sale-item-box-image img {
+        border-radius: 50%;
+        position: relative;
+        display: block; }
+      .sale-item-box-hover {
+        width: 206px;
+        height: 206px;
+        font-size: 24px;
+        font-family: roboto_bold;
+        line-height: 40px;
+        color: #e8e8e8;
+        text-transform: capitalize;
+        background: rgba(236, 192, 98, 0.5);
+        line-height: 206px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        border-radius: 50%;
+        opacity: 0; }
+      .sale-item-box-title {
+        font-family: oswald_regular;
+        font-size: 20px;
+        line-height: 32px;
+        text-transform: capitalize;
+        margin-top: 35px; }
+        .sale-item-box-title a:hover {
+          color: #feb518;
+          transition: all 300ms ease; }
+      .sale-item-box-readmore a {
+        color: #feb518; }
+
+  .reservation {
+    background: url("../images/4.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative; }
+    .reservation:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(13, 13, 13, 0.55); }
+    .reservation-intro {
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1; }
+      .reservation-intro-title {
+        font-family: dancing_bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #feb518; }
+      .reservation-intro-text {
+        font-size: 36px;
+        font-family: roboto_bold;
+        line-height: 40px;
+        color: #e8e8e8;
+        text-transform: capitalize; }
+    .reservation-form {
+      position: relative;
+      z-index: 3; }
+      .reservation-form .button-reservation {
+        position: relative;
+        z-index: 2; }
+        .reservation-form .button-reservation:hover {
+          color: #feb518; }
+      .reservation-form .form-group {
+        margin-bottom: 30px;
+        opacity: 0; }
+        .reservation-form .form-group .fa {
+          position: absolute;
+          top: 15px;
+          right: 22px;
+          font-size: 16px;
+          color: #e8e8e8; }
+        .reservation-form .form-group .form-control {
+          background-color: rgba(57, 57, 57, 0.5);
+          color: #e8e8e8;
+          height: 45px; }
+          .reservation-form .form-group .form-control:focus {
+            border-color: #feb518; }
+          .reservation-form .form-group .form-control::-webkit-input-placeholder {
+            font-family: roboto_regular;
+            font-size: 14px;
+            line-height: 50px; }
+
+  .chef {
+    padding: 100px 0; }
+    .chef-intro {
+      margin-bottom: 60px; }
+      .chef-intro-title {
+        font-family: dancing_bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #feb518; }
+      .chef-intro-text {
+        font-size: 24px;
+        font-family: roboto_bold;
+        line-height: 40px;
+        color: #333;
+        text-transform: capitalize; }
+    .chef-group-item {
+      opacity: 0; }
+      .chef-group-item img {
+        border-radius: 50%;
+        cursor: pointer; }
+      .chef-group-item-title {
+        margin: 10px 0 0 0;
+        font-family: oswald_regular;
+        font-size: 20px;
+        line-height: 32px;
+        text-transform: capitalize;
+        cursor: pointer; }
+      .chef-group-item-text {
+        font-size: 16px;
+        color: #feb518; }
+      .chef-group-item-social a {
+        margin: 0 5px;
+        font-size: 16px; }
+        .chef-group-item-social a:hover {
+          color: #feb518;
+          transition: all 300ms ease; }
+
+  .testimonial {
+    padding: 90px 0;
+    background: url("../images/9.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative; }
+    .testimonial::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(13, 13, 13, 0.55); }
+    .testimonial #testimonial-slide .owl-item {
+      text-align: center; }
+      .testimonial #testimonial-slide .owl-item img {
+        margin-bottom: 30px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: inline-block; }
+      .testimonial #testimonial-slide .owl-item-text {
+        padding: 0 80px; }
+        .testimonial #testimonial-slide .owl-item-text q {
+          color: #e8e8e8;
+          line-height: 32px;
+          font-size: 20px;
+          margin-bottom: 30px; }
+        .testimonial #testimonial-slide .owl-item-text cite {
+          font-family: dancing_bold;
+          font-size: 30px;
+          line-height: 50px;
+          color: #feb518; }
+          .testimonial #testimonial-slide .owl-item-text cite:before {
+            content: "- ";
+            color: #e8e8e8; }
+    .testimonial #testimonial-slide .owl-dots {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%); }
+      .testimonial #testimonial-slide .owl-dots .owl-dot {
+        display: inline-block;
+        text-align: center;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid #e8e8e8;
+        margin: 0 7px; }
+        .testimonial #testimonial-slide .owl-dots .owl-dot.active {
+          background: #feb518;
+          border-color: #feb518; }
+
+  .blog {
+    padding: 100px 0; }
+    .blog-intro {
+      margin-bottom: 50px; }
+      .blog-intro-title {
+        font-family: dancing_bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #feb518; }
+      .blog-intro-text {
+        font-size: 24px;
+        font-family: roboto_bold;
+        line-height: 40px;
+        color: #333;
+        text-transform: capitalize; }
+    .blog-item .blog-thumb {
+      opacity: 0; }
+    .blog-item-box {
+      border-bottom: 1px dashed #333;
+      margin-bottom: 20px;
+      padding-bottom: 25px; }
+      .blog-item-box-title {
+        font-family: oswald_regular;
+        font-size: 20px;
+        line-height: 32px;
+        text-transform: capitalize;
+        margin: 25px 0 10px 0; }
+        .blog-item-box-title a:hover {
+          color: #feb518;
+          transition: all 300ms ease; }
+      .blog-item-box-date {
+        font-size: 14px;
+        color: #888;
+        line-height: 24px;
+        font-family: roboto_regular; }
+        .blog-item-box-date .author {
+          color: #feb518;
+          text-transform: capitalize;
+          padding: 0 10px; }
+      .blog-item-box-text {
+        margin-bottom: 0; }
+    .blog-item-more .readmore {
+      font-weight: bold; }
+      .blog-item-more .readmore a:hover {
+        color: #feb518;
+        transition: all 300ms ease; }
+
+  .topfooter {
+    padding: 100px 0;
+    background: #222; }
+    .topfooter-col1 {
+      margin-bottom: 15px; }
+      .topfooter-col1 p {
+        margin: 10px 0 20px 0; }
+      .topfooter-col1-address span {
+        font-size: 13px; }
+      .topfooter-col1-address:nth-child(2) {
+        margin: 5px 0; }
+      .topfooter-col1-address i.fa {
+        margin-right: 20px; }
+    .topfooter-col2-link, .topfooter-col3-link, .topfooter-col4-link {
+      color: #e8e8e8;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      line-height: 32px;
+      font-size: 14px; }
+      .topfooter-col2-link:after, .topfooter-col3-link:after, .topfooter-col4-link:after {
+        content: '';
+        display: block;
+        width: 40px;
+        border: 1px solid #feb518;
+        margin-top: 5px; }
+    .topfooter-col2 ul {
+      list-style: none;
+      margin-bottom: 0; }
+      .topfooter-col2 ul li {
+        margin-bottom: 10px; }
+        .topfooter-col2 ul li :last-child {
+          margin-bottom: 0; }
+        .topfooter-col2 ul li a {
+          color: #888; }
+          .topfooter-col2 ul li a:hover {
+            color: #e8e8e8;
+            transition: all 300ms ease; }
+    .topfooter-col3-post {
+      position: relative;
+      min-height: 62px;
+      padding-left: 75px; }
+      .topfooter-col3-post:nth-child(3) {
+        margin: 10px 0; }
+      .topfooter-col3-post-image {
+        position: absolute;
+        top: 0;
+        left: 0; }
+        .topfooter-col3-post-image img {
+          border-radius: 50%;
+          width: 100%; }
+      .topfooter-col3-post-title {
+        line-height: 32px; }
+        .topfooter-col3-post-title a {
+          color: #e8e8e8; }
+          .topfooter-col3-post-title a:hover {
+            color: #feb518;
+            transition: all 300ms ease; }
+      .topfooter-col3-post-date {
+        font-size: 13px; }
+    .topfooter-col4-opening {
+      margin-bottom: 25px;
+      font-size: 13px; }
+
+  .bottomfooter {
+    padding: 40px 0;
+    font-size: 13px;
+    background: #111;
+    color: #e8e8e8; }
+
+  section.about-us .menu-intro {
+    padding: 180px 0;
+    background: url(../images/10.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; }
+    section.about-us .menu-intro-title {
+      font-size: 36px; }
+    section.about-us .menu-intro-text {
+      font-size: 30px; }
+  section.about-us .about-intro {
+    padding: 100px 0; }
+    section.about-us .about-intro .sale-intro {
+      margin: 0; }
+      section.about-us .about-intro .sale-intro-title {
+        font-size: 30px; }
+      section.about-us .about-intro .sale-intro-text {
+        font-size: 24px;
+        margin-bottom: 20px; }
+    section.about-us .about-intro .image-holder figure {
+      margin: 0;
+      padding: 0 2px; }
+      section.about-us .about-intro .image-holder figure img {
+        display: block;
+        width: 100%; }
+
+  section.service .menu-intro {
+    padding: 180px 0;
+    background: url(../images/5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; }
+  section.service .about-readmore a {
+    color: #feb518; }
+
+  section.chef-master {
+    background-color: #f9f9f9;
+    background-image: url(../images/6.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; }
+    section.chef-master .sale-intro {
+      margin-top: 130px;
+      margin-bottom: 20px; }
+      section.chef-master .sale-intro-text {
+        font-size: 30px; }
+      section.chef-master .sale-intro-title {
+        font-size: 30px; }
+    section.chef-master p {
+      margin-bottom: 20px; }
+    section.chef-master i.fa {
+      width: 30px;
+      height: 30px;
+      background: #333;
+      color: #e8e8e8;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 3px;
+      transition: 0.5s; }
+      section.chef-master i.fa:hover {
+        background: #feb518; }
+
+  .contact-banner {
+    background: url(../images/11.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 60px 0; }
+    .contact-banner:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(13, 13, 13, 0.55); }
+    .contact-banner-title {
+      font-size: 24px;
+      font-family: roboto_bold;
+      line-height: 40px;
+      color: #e8e8e8;
+      text-transform: capitalize;
+      position: relative;
+      z-index: 16; }
+    .contact-banner .button-reservation {
+      margin: 0;
+      position: relative;
+      z-index: 17; }
+      .contact-banner .button-reservation:hover {
+        color: #feb518; }
+
+  .tablebooking {
+    padding: 100px 0; }
+    .tablebooking-info {
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #e8e8e8; }
+      .tablebooking-info .sale-intro {
+        margin-bottom: 20px; }
+        .tablebooking-info .sale-intro-title {
+          font-size: 36px; }
+        .tablebooking-info .sale-intro-text {
+          font-size: 30px; }
+      .tablebooking-info p {
+        font-size: 16px;
+        margin-bottom: 20px; }
+        .tablebooking-info p time {
+          color: #feb518; }
+      .tablebooking-info .contact {
+        margin: 0;
+        font-size: 24px;
+        font-family: roboto_bold;
+        line-height: 40px;
+        color: #333;
+        text-transform: capitalize; }
+    .tablebooking .reservation-form-title {
+      padding-bottom: 50px;
+      text-align: center;
+      font-size: 30px;
+      font-family: roboto_bold;
+      line-height: 40px;
+      color: #333;
+      text-transform: capitalize; }
+    .tablebooking .reservation-form .form-group {
+      opacity: 1; }
+      .tablebooking .reservation-form .form-group .form-control {
+        background: none;
+        color: #888;
+        transition: all 500ms ease; }
+      .tablebooking .reservation-form .form-group i.fa {
+        color: #888; }
+
+  #reservationpage .reservation {
+    padding: 200px 0; }
+    #reservationpage .reservation-intro {
+      margin: 0; }
+  #reservationpage .about-us h4 {
+    font-family: oswald_regular;
+    font-size: 16px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #333;
+    line-height: 24px; }
+
+  .contact-us {
+    padding: 100px 0; }
+    .contact-us .sale-intro {
+      margin-bottom: 20px; }
+      .contact-us .sale-intro-title {
+        font-size: 30px; }
+      .contact-us .sale-intro-text {
+        font-size: 24px; }
+    .contact-us iframe {
+      width: 100%;
+      height: 100%; }
+    .contact-us form .form-group .form-control {
+      height: 45px;
+      border-color: #e8e8e8;
+      transition: all 500ms ease; }
+      .contact-us form .form-group .form-control::-webkit-input-placeholder {
+        color: #888;
+        font-size: 13px; }
+      .contact-us form .form-group .form-control:focus {
+        border-color: #feb518; }
+    .contact-us form .form-group input[type=submit] {
+      background: #333;
+      color: #e8e8e8;
+      font-weight: 700;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 300ms; }
+      .contact-us form .form-group input[type=submit]:hover {
+        background: none;
+        color: #333;
+        border: 2px solid #333; }
+    .contact-us form .form-group textarea.form-control {
+      height: 165px; }
+    .contact-us form .form-group:last-child {
+      margin: 0; }
+
+  .location {
+    padding: 100px 0; }
+    .location .sale-intro-title {
+      font-size: 30px; }
+    .location .sale-intro-text {
+      font-size: 24px; }
+    .location-box-image {
+      margin-bottom: 30px; }
+    .location-box address {
+      margin-bottom: 10px; }
+      .location-box address div {
+        position: relative;
+        padding-left: 30px; }
+        .location-box address div:nth-child(2) {
+          margin: 10px 0; }
+      .location-box address i.fa {
+        color: #feb518;
+        font-size: 16px;
+        position: absolute;
+        top: 3px;
+        left: 0; }
+      .location-box address span {
+        font-size: 13px; }
+    .location-box h5 {
+      font-size: 14px;
+      margin-top: 10px; }
+      .location-box h5 a:hover {
+        color: #feb518;
+        transition: all 300ms ease; }
+
+  .dishes {
+    padding: 120px 0; }
+    .dishes .dish {
+      position: relative;
+      margin-bottom: 30px; }
+      .dishes .dish:hover .dish-box {
+        opacity: 1; }
+      .dishes .dish .sale-intro-title {
+        font-size: 36px; }
+      .dishes .dish .sale-intro-text {
+        font-size: 30px; }
+      .dishes .dish-image {
+        position: relative; }
+        .dishes .dish-image .tag-new {
+          padding: 3px 20px; }
+      .dishes .dish-box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #e8e8e8;
+        width: 100%;
+        padding: 0 20px;
+        opacity: 0;
+        transition: all 500ms ease; }
+        .dishes .dish-box-content .title, .dishes .dish-box-content .price {
+          font-size: 16px;
+          font-family: oswald_regular; }
+          .dishes .dish-box-content .title a, .dishes .dish-box-content .price a {
+            display: block;
+            color: #e8e8e8; }
+        .dishes .dish-box-content:hover .title a, .dishes .dish-box-content:hover .price a {
+          color: #feb518;
+          transition: all 300ms ease; }
+        .dishes .dish-box-content:hover .price {
+          color: #feb518;
+          transition: all 300ms ease; }
+
+  .gallery {
+    padding: 100px 0; }
+    .gallery-blur {
+      background: #00000090;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 998;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s; }
+      .gallery-blur.blur {
+        opacity: 1;
+        visibility: visible; }
+      .gallery-blur.blur {
+        opacity: 1;
+        visibility: visible; }
+    .gallery-carousel {
+      position: fixed;
+      z-index: 1000;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      height: auto;
+      background: #fff;
+      transition: all 1000ms ease;
+      opacity: 0;
+      visibility: hidden; }
+      .gallery-carousel.on {
+        opacity: 1;
+        visibility: visible;
+        top: 50%; }
+      .gallery-carousel .popup-text {
+        position: relative;
+        background: #feb518; }
+        .gallery-carousel .popup-text h3 {
+          font-size: 20px;
+          text-align: center;
+          color: #fff;
+          text-transform: capitalize;
+          padding: 15px 0; }
+        .gallery-carousel .popup-text i.fa-close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          padding: 5px;
+          background: orange;
+          color: #fff;
+          cursor: pointer; }
+      .gallery-carousel-inner {
+        position: relative;
+        padding: 15px; }
+        .gallery-carousel-inner #gallery-carousel-main {
+          position: relative;
+          margin-bottom: 10px; }
+          .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-next, .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-prev {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff; }
+            .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-next:hover, .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-prev:hover {
+              background: #888;
+              transition: 500ms; }
+          .gallery-carousel-inner #gallery-carousel-main .owl-nav .owl-prev {
+            right: auto;
+            left: 20px; }
+    .gallery-box {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px; }
+      .gallery-box:hover .gallery-box-title {
+        bottom: 0; }
+      .gallery-box img {
+        width: 100%;
+        display: block; }
+      .gallery-box-title {
+        position: absolute;
+        bottom: -100%;
+        left: 20px;
+        padding-bottom: 30px;
+        transition: all 500ms ease;
+        z-index: 1; }
+        .gallery-box-title a {
+          font-size: 20px;
+          font-family: oswald_bold;
+          line-height: 24px;
+          color: #feb518; }
+
+  #navigation ul.pagination {
+    list-style: none; }
+    #navigation ul.pagination li {
+      display: inline-block; }
+      #navigation ul.pagination li a {
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        border-radius: 50%; }
+        #navigation ul.pagination li a.active {
+          background: #feb518;
+          color: #e8e8e8 !important; }
+        #navigation ul.pagination li a.next {
+          width: 102px;
+          border-radius: 20px;
+          border: 1px solid #e8e8e8; }
+        #navigation ul.pagination li a:hover {
+          background: #feb518;
+          color: #e8e8e8;
+          transition: all 500ms ease; }
+
+  .blog-item {
+    margin-bottom: 60px; }
+    .blog-item img {
+      width: 100%; }
+
+  .sidebar .search {
+    margin-bottom: 30px; }
+    .sidebar .search form {
+      position: relative;
+      width: 90%; }
+      .sidebar .search form input {
+        height: 40px;
+        padding: 15px;
+        border-radius: 0;
+        font-size: 13px; }
+        .sidebar .search form input:focus {
+          border-color: #feb518;
+          transition: all 300ms ease; }
+      .sidebar .search form button {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        line-height: 40px;
+        background: none;
+        border: none;
+        color: #888;
+        cursor: pointer; }
+        .sidebar .search form button:focus {
+          outline: none; }
+  .sidebar .categories {
+    margin-bottom: 30px; }
+    .sidebar .categories .title, .sidebar .categories .dishes .dish-box-content .price, .dishes .dish-box-content .sidebar .categories .price {
+      font-family: oswald_regular;
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: capitalize;
+      color: #333;
+      margin-bottom: 15px; }
+    .sidebar .categories ul {
+      padding-left: 15px; }
+      .sidebar .categories ul li {
+        margin-bottom: 15px; }
+        .sidebar .categories ul li a {
+          color: #888; }
+          .sidebar .categories ul li a:hover {
+            color: #feb518;
+            transition: all 300ms ease; }
+  .sidebar .toprated {
+    margin-bottom: 30px; }
+    .sidebar .toprated h3 {
+      font-family: oswald_regular;
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: capitalize;
+      color: #333;
+      margin-bottom: 15px; }
+    .sidebar .toprated-box {
+      position: relative;
+      padding: 5px 0 0 100px;
+      min-height: 90px;
+      margin-bottom: 20px; }
+      .sidebar .toprated-box:hover .box-image img {
+        opacity: 0.5;
+        transition: all 500ms ease; }
+      .sidebar .toprated-box .box-image {
+        position: absolute;
+        top: 0;
+        left: 0; }
+        .sidebar .toprated-box .box-image img {
+          display: block;
+          width: 100%; }
+      .sidebar .toprated-box .box-title .name a {
+        font-family: oswald_regular;
+        font-size: 16px;
+        line-height: 32px;
+        text-transform: capitalize; }
+        .sidebar .toprated-box .box-title .name a:hover {
+          color: #feb518;
+          transition: all 300ms ease; }
+      .sidebar .toprated-box .box-title .price {
+        font-size: 13px;
+        color: #333; }
+        .sidebar .toprated-box .box-title .price-main {
+          margin-right: 10px; }
+        .sidebar .toprated-box .box-title .price-sale {
+          color: #888;
+          text-decoration: line-through; }
+
+  .post {
+    padding: 100px 0; }
+    .post .blog-item-box p {
+      margin-bottom: 20px; }
+    .post .blog-item-box h3 {
+      font-family: oswald_regular;
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: capitalize;
+      color: #333;
+      margin-bottom: 20px; }
+    .post .blog-item-box img {
+      width: 50%;
+      float: left;
+      margin-bottom: 20px; }
+    .post .blog-item-box ul {
+      list-style: none;
+      margin: 20px 0; }
+      .post .blog-item-box ul li {
+        margin-bottom: 15px; }
+        .post .blog-item-box ul li:before {
+          content: "\f0c8";
+          font-family: fontawesome;
+          color: #feb518;
+          margin-right: 15px;
+          font-size: 8px; }
+    .post .blog-item-more .readmore {
+      font-size: 16px;
+      color: #333; }
+      .post .blog-item-more .readmore a {
+        color: #feb518; }
+        .post .blog-item-more .readmore a:hover {
+          color: #333;
+          transition: all 300ms ease; }
+    .post .comment-title, .post .commentform-title {
+      font-family: oswald_regular;
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: capitalize;
+      color: #333;
+      margin-bottom: 20px; }
+    .post .comment-box {
+      position: relative;
+      padding-left: 135px;
+      min-height: 100px; }
+      .post .comment-box:nth-child(3) {
+        margin: 50px 0 50px 80px; }
+      .post .comment-box-image {
+        position: absolute;
+        top: 0;
+        left: 0; }
+        .post .comment-box-image img {
+          display: block;
+          width: 100%;
+          border-radius: 50%; }
+      .post .comment-box-content {
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 30px; }
+        .post .comment-box-content .name-title .name {
+          font-family: oswald_regular;
+          font-size: 16px;
+          line-height: 32px;
+          text-transform: capitalize;
+          margin-bottom: 5px;
+          line-height: 24px; }
+        .post .comment-box-content .name-title .date time {
+          margin-right: 20px; }
+        .post .comment-box-content .name-title .date .reply {
+          color: #333; }
+          .post .comment-box-content .name-title .date .reply:hover {
+            color: #feb518;
+            transition: all 300ms ease; }
+    .post .commentform {
+      margin-top: 60px; }
+      .post .commentform-title {
+        margin-bottom: 60px; }
+      .post .commentform form fieldset {
+        padding: 0; }
+        .post .commentform form fieldset label {
+          font-size: 13px; }
+          .post .commentform form fieldset label span {
+            color: #feb518; }
+        .post .commentform form fieldset input {
+          height: 40px; }
+          .post .commentform form fieldset input:focus {
+            border-color: #feb518;
+            transition: all 300ms ease; }
+        .post .commentform form fieldset textarea {
+          height: 135px;
+          margin-bottom: 20px; }
+      .post .commentform form .button-reservation {
+        height: 40px;
+        margin: 0;
+        width: 100%; }
+
+  section.shoppage .menu-intro {
+    padding: 180px 0;
+    background: url(../images/10.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; }
+    section.shoppage .menu-intro-title {
+      font-size: 36px; }
+    section.shoppage .menu-intro-text {
+      font-size: 30px; }
+
+  .shop {
+    padding: 120px 0; }
+    .shop .row {
+      display: flex;
+      flex-direction: row-reverse; }
+    .shop .shop-content .shop-list {
+      margin-bottom: 40px; }
+      .shop .shop-content .shop-list .showinglist {
+        line-height: 40px; }
+      .shop .shop-content .shop-list .sorting {
+        position: relative; }
+        .shop .shop-content .shop-list .sorting:after {
+          content: '\f107';
+          font-family: fontawesome;
+          position: absolute;
+          top: 8px;
+          right: 8px;
+          color: #feb518;
+          font-size: 16px; }
+        .shop .shop-content .shop-list .sorting select {
+          padding: 10px 15px;
+          color: #888;
+          font-size: 14px;
+          cursor: pointer;
+          border: 1px solid #feb518;
+          width: 100%;
+          -webkit-appearance: none; }
+          .shop .shop-content .shop-list .sorting select:focus {
+            outline: none; }
+
+  .shop-item-box {
+    margin-bottom: 40px; }
+    .shop-item-box:hover .box-image-bag {
+      bottom: 0; }
+    .shop-item-box .box-image {
+      position: relative;
+      overflow: hidden; }
+      .shop-item-box .box-image img {
+        display: block;
+        width: 100%; }
+      .shop-item-box .box-image-bag {
+        width: 140px;
+        height: 35px;
+        background: #feb518;
+        line-height: 35px;
+        text-align: center;
+        position: absolute;
+        bottom: -15%;
+        right: 0;
+        transition: all 500ms ease; }
+        .shop-item-box .box-image-bag i.fa {
+          font-size: 16px;
+          margin-right: 5px; }
+        .shop-item-box .box-image-bag a {
+          font-size: 14px;
+          font-family: roboto_bold;
+          line-height: 40px;
+          color: #e8e8e8;
+          text-transform: capitalize;
+          text-transform: uppercase; }
+    .shop-item-box .box-inner {
+      margin-top: 10px; }
+      .shop-item-box .box-inner:hover .box-inner-title a, .shop-item-box .box-inner:hover .box-inner-price a {
+        color: #feb518;
+        transition: all 300ms ease; }
+      .shop-item-box .box-inner:hover .box-inner-price {
+        color: #feb518;
+        transition: all 300ms ease; }
+      .shop-item-box .box-inner-title, .shop-item-box .box-inner-price {
+        font-family: oswald_regular;
+        font-size: 16px;
+        line-height: 32px;
+        text-transform: capitalize;
+        margin-bottom: 0; }
+      .shop-item-box .box-inner-price {
+        color: #333; }
+    .shop-item-box .rating {
+      color: #feb518;
+      cursor: pointer;
+      font-size: 13px; }
+
+  .product {
+    padding: 120px 0; }
+    .product #product-image {
+      margin-bottom: 10px; }
+    .product #product-thumbs .owl-item.active.center {
+      border: 3px solid #feb518; }
+    .product-detail-title .title, .product-detail-title .dishes .dish-box-content .price, .dishes .dish-box-content .product-detail-title .price {
+      color: #333;
+      font-family: oswald_regular;
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: capitalize; }
+    .product-detail-title .rating {
+      margin: 15px 0; }
+      .product-detail-title .rating-star {
+        color: #feb518; }
+      .product-detail-title .rating-review span:first-child {
+        margin: 0 15px;
+        padding-right: 15px;
+        border-right: 1px solid #888; }
+      .product-detail-title .rating-review a {
+        color: #888; }
+    .product-detail-title .description {
+      margin-bottom: 20px; }
+    .product-detail-price .price {
+      padding: 20px 0;
+      border-top: 1px solid #e8e8e8;
+      border-bottom: 1px solid #e8e8e8;
+      font-size: 20px;
+      font-family: roboto_bold;
+      line-height: 40px;
+      color: #feb518;
+      text-transform: capitalize; }
+    .product-detail-price .addcart {
+      padding: 40px 0; }
+      .product-detail-price .addcart span {
+        color: #333;
+        float: left;
+        line-height: 45px;
+        margin-right: 15px; }
+      .product-detail-price .addcart input {
+        height: 45px;
+        width: 40px;
+        float: left;
+        border: 1px solid #e8e8e8;
+        padding: 15px; }
+        .product-detail-price .addcart input:focus {
+          outline: none; }
+      .product-detail-price .addcart button {
+        margin: 0;
+        float: left;
+        padding: 14px 30px;
+        color: #e8e8e8;
+        border-radius: 0;
+        font-family: roboto_bold;
+        margin: 0 15px; }
+        .product-detail-price .addcart button:focus {
+          outline: none; }
+        .product-detail-price .addcart button:hover {
+          color: #feb518; }
+      .product-detail-price .addcart .share {
+        width: 45px;
+        height: 45px;
+        border: 1px solid #e8e8e8;
+        float: left;
+        text-align: center;
+        line-height: 45px;
+        cursor: pointer; }
+        .product-detail-price .addcart .share:hover {
+          color: #feb518;
+          transition: all 300ms ease; }
+    .product-detail-review .review-title a {
+      color: #333;
+      padding: 15px 25px;
+      border: 1px solid #e8e8e8;
+      display: inline-block;
+      float: left; }
+    .product-detail-review .review-description ul.review {
+      list-style: none; }
+    .product-detail-review .review-description .review_1 {
+      border: 1px solid #e8e8e8;
+      padding: 20px;
+      display: none;
+      transition: 5s; }
+    .product-detail-review .review-description .review_2 {
+      border: 1px solid #e8e8e8;
+      padding: 20px;
+      display: none; }
+      .product-detail-review .review-description .review_2 .review-box {
+        position: relative;
+        min-height: 100px;
+        padding-left: 115px; }
+        .product-detail-review .review-description .review_2 .review-box-image {
+          position: absolute;
+          top: 0px;
+          left: 0px; }
+        .product-detail-review .review-description .review_2 .review-box-detail {
+          border: 1px solid #e8e8e8;
+          padding: 10px;
+          margin-bottom: 20px; }
+          .product-detail-review .review-description .review_2 .review-box-detail i.fa {
+            color: #feb518; }
+          .product-detail-review .review-description .review_2 .review-box-detail .customer {
+            font-size: 13px; }
+      .product-detail-review .review-description .review_2 .review-form h4 {
+        font-family: oswald_regular;
+        font-size: 16px;
+        line-height: 32px;
+        text-transform: capitalize;
+        color: #333;
+        margin-bottom: 15px; }
+      .product-detail-review .review-description .review_2 .review-form form fieldset {
+        padding: 0;
+        margin-bottom: 15px; }
+      .product-detail-review .review-description .review_2 .review-form form label {
+        color: #333; }
+      .product-detail-review .review-description .review_2 .review-form form input {
+        height: 40px;
+        border-radius: 0;
+        border: 1px solid #e8e8e8; }
+        .product-detail-review .review-description .review_2 .review-form form input:focus {
+          border-color: #feb518;
+          transition: all 300ms ease; }
+      .product-detail-review .review-description .review_2 .review-form form textarea {
+        height: 100px; }
+      .product-detail-review .review-description .review_2 .review-form form button {
+        margin: 0; }
+      .product-detail-review .review-description .review_2 .review-form form .review-form-rating span {
+        margin-right: 10px;
+        cursor: pointer; }
+        .product-detail-review .review-description .review_2 .review-form form .review-form-rating span:hover {
+          color: #feb518;
+          transition: all 300ms ease; }
+
+  .releated {
+    padding-bottom: 120px; }
+
+  .shopping-table {
+    padding: 120px 0 80px; }
+    .shopping-table .table-innner {
+      overflow-x: auto; }
+    .shopping-table table {
+      text-align: center;
+      border: 1px solid #e8e8e8;
+      width: 100%;
+      border-collapse: collapse; }
+      .shopping-table table th, .shopping-table table td {
+        color: #333;
+        font-size: 16px;
+        padding: 20px 0;
+        border: 1px solid #e8e8e8;
+        text-align: center; }
+      .shopping-table table tbody .product-name a {
+        float: left;
+        padding-left: 40px;
+        padding-right: 20px; }
+      .shopping-table table tbody .product-name h4 {
+        line-height: 85px;
+        float: left;
+        font-size: 14px; }
+      .shopping-table table tbody .count-inner {
+        position: relative;
+        display: inline-block; }
+        .shopping-table table tbody .count-inner .times, .shopping-table table tbody .count-inner .plus {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          border-right: 1px solid #e8e8e8;
+          z-index: 1;
+          font-weight: bold; }
+        .shopping-table table tbody .count-inner input {
+          position: relative;
+          height: 40px;
+          width: 120px;
+          text-align: center;
+          font-size: 13px;
+          border: 1px solid #e8e8e8; }
+          .shopping-table table tbody .count-inner input:focus {
+            outline: none; }
+        .shopping-table table tbody .count-inner .plus {
+          right: 0;
+          left: auto;
+          border-left: 1px solid #e8e8e8; }
+      .shopping-table table tbody .product-price {
+        padding: 0 30px; }
+      .shopping-table table tbody .delete {
+        padding: 0 30px;
+        font-size: 20px;
+        cursor: pointer; }
+  .shopping-cart {
+    padding-bottom: 120px; }
+    .shopping-cart .coupon, .shopping-cart .total {
+      padding: 20px;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 50px; }
+      .shopping-cart .coupon-title, .shopping-cart .total-title, .shopping-cart .total-main-title {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px; }
+      .shopping-cart .coupon-form {
+        position: relative; }
+        .shopping-cart .coupon-form input {
+          height: 45px;
+          border: 1px solid #e8e8e8;
+          height: 45px;
+          width: 65%;
+          text-transform: uppercase; }
+        .shopping-cart .coupon-form button {
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #e8e8e8;
+          height: 45px;
+          margin: 0;
+          border-radius: 0;
+          text-transform: uppercase;
+          padding: 9px 20px; }
+          .shopping-cart .coupon-form button:hover {
+            color: #feb518; }
+          .shopping-cart .coupon-form button:focus {
+            outline: none; }
+    .shopping-cart .total-sub {
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 20px;
+      margin-bottom: 30px; }
+      .shopping-cart .total-sub-price {
+        color: #333;
+        font-size: 16px; }
+    .shopping-cart .total-main-title {
+      text-transform: uppercase; }
+    .shopping-cart .total-main-price {
+      color: #333;
+      font-size: 20px; }
+    .shopping-cart .shopping-button {
+      float: right; }
+      .shopping-cart .shopping-button .update {
+        background: #333;
+        padding: 9px 20px;
+        color: #e8e8e8;
+        text-transform: uppercase;
+        border: 2px solid #333;
+        border-radius: 0;
+        margin-right: 10px; }
+        .shopping-cart .shopping-button .update:hover {
+          background: none;
+          color: #333;
+          transition: all 300ms ease; }
+      .shopping-cart .shopping-button .checkout {
+        border-radius: 0;
+        padding: 9px 30px;
+        text-transform: uppercase;
+        color: #e8e8e8; }
+        .shopping-cart .shopping-button .checkout:hover {
+          color: #feb518; }
+
+  .checkout-billing-detail .title, .checkout-billing-detail .dishes .dish-box-content .price, .dishes .dish-box-content .checkout-billing-detail .price, .checkout-billing-ship .title, .checkout-billing-ship .dishes .dish-box-content .price, .dishes .dish-box-content .checkout-billing-ship .price, .checkout .shopping-table-title, .checkout-payment-title {
+    font-size: 20px;
+    font-family: roboto_bold;
+    line-height: 40px;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 35px; }
+
+  .checkout {
+    padding: 120px 0; }
+    .checkout-customer {
+      margin-bottom: 50px; }
+      .checkout-customer-login {
+        position: relative;
+        padding: 0 60px;
+        background: #e8e8e8;
+        height: 60px; }
+        .checkout-customer-login .title, .checkout-customer-login .dishes .dish-box-content .price, .dishes .dish-box-content .checkout-customer-login .price {
+          font-size: 16px;
+          font-family: roboto_bold;
+          line-height: 40px;
+          color: #333;
+          text-transform: capitalize;
+          line-height: 60px; }
+        .checkout-customer-login a {
+          position: absolute;
+          top: 50%;
+          right: 60px;
+          transform: translateY(-50%);
+          margin: 0;
+          border-radius: 0;
+          text-transform: uppercase;
+          padding: 7px 15px;
+          color: #e8e8e8; }
+          .checkout-customer-login a:hover {
+            color: #feb518; }
+    .checkout-billing-detail form input {
+      height: 45px;
+      border-radius: 0;
+      padding: 19px 28px; }
+      .checkout-billing-detail form input:focus {
+        border: 1px solid #feb518;
+        transition: all 300ms ease; }
+    .checkout-billing-detail form textarea {
+      padding: 19px 28px;
+      height: 100px; }
+    .checkout-billing-detail form select {
+      height: 45px;
+      width: 100%;
+      border: 1px solid #e8e8e8;
+      padding-left: 28px;
+      color: #888; }
+      .checkout-billing-detail form select:focus {
+        border: 1px solid #feb518;
+        transition: all 300ms ease;
+        cursor: pointer; }
+    .checkout-billing-detail form .checkbox input {
+      height: auto;
+      margin-right: 10px;
+      margin-top: 5px;
+      cursor: pointer; }
+    .checkout-billing-detail form .checkbox label {
+      color: #feb518;
+      cursor: pointer; }
+    .checkout-billing-ship input {
+      height: 60px;
+      padding: 28px;
+      border-radius: 0; }
+      .checkout-billing-ship input:focus {
+        border: 1px solid #feb518;
+        transition: all 300ms ease;
+        cursor: pointer; }
+    .checkout .shopping-table {
+      padding: 60px 0; }
+    .checkout-payment form .form-group {
+      background: #e8e8e845;
+      position: relative;
+      padding: 0 30px; }
+      .checkout-payment form .form-group input {
+        position: absolute;
+        top: 5px;
+        left: 5px; }
+      .checkout-payment form .form-group label {
+        cursor: pointer;
+        color: #333; }
+        .checkout-payment form .form-group label small {
+          display: block; }
+    .checkout-payment button {
+      padding: 15px 32px;
+      border-radius: 0;
+      color: #e8e8e8;
+      text-transform: uppercase; }
+      .checkout-payment button:hover {
+        color: #feb518; } }
+@media (max-width: 1199px) {
+  nav ul li {
+    margin-left: 18px; }
+
+  section.about-us .menu-intro {
+    padding: 120px 0; }
+  section.about-us .about-intro-text {
+    margin-bottom: 8px; }
+  section.about-us .about-intro .button-reservation {
+    margin: 0; }
+
+  section.service .menu-intro {
+    padding: 120px 0; }
+    section.service .menu-intro-title {
+      font-size: 36px; }
+    section.service .menu-intro-text {
+      font-size: 30px; }
+
+  .contact-banner {
+    padding: 50px 0; }
+
+  #reservationpage .about-us .image-holder {
+    margin-top: 30px; } }
+@media (max-width: 991px) {
+  .topheader {
+    font-size: 13px; }
+    .topheader-cart {
+      margin: 0 5px; }
+    .topheader-social {
+      margin-right: 12px; }
+
+  .account-info-name {
+    font-size: 11px; }
+
+  nav .logo {
+    margin: 25px 0; }
+  nav i.fa-bars {
+    display: block;
+    margin-top: 45px;
+    font-size: 18px;
+    color: #feb518;
+    border: 2px solid #feb518;
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px; }
+  nav ul {
+    display: block;
+    background: #272727;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -310px;
+    z-index: 999;
+    transition: all 500ms ease; }
+    nav ul .closer {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer; }
+    nav ul .logo-mobile {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px; }
+    nav ul li {
+      display: block;
+      margin: 0; }
+      nav ul li:nth-child(10) a {
+        border-bottom: 1px solid #888; }
+      nav ul li:last-child {
+        text-align: center; }
+      nav ul li a {
+        padding: 10px 20px;
+        border-top: 1px solid #888;
+        color: #e8e8e8 !important; }
+        nav ul li a.active {
+          background: #888; }
+
+  .banner .owl-item .banner-caption img {
+    width: 150px; }
+  .banner .owl-item .banner-caption-title {
+    font-size: 30px; }
+  .banner .owl-item .banner-caption-text {
+    font-size: 12px; }
+  .banner .owl-item .banner-caption .button-reservation {
+    padding: 5px 30px; }
+
+  .about {
+    padding: 60px 0; }
+
+  .menu-intro {
+    padding: 170px 0; }
+  .menu-list {
+    transform: translateY(170px); }
+  .menu .menu-item-dining {
+    padding-left: 110px; }
+    .menu .menu-item-dining-image {
+      width: 85px; }
+
+  .special-box-text {
+    font-size: 13px; }
+
+  .sale {
+    padding: 60px 0; }
+
+  .reservation {
+    padding: 90px 0; }
+
+  .testimonial {
+    padding: 60px 0; }
+    .testimonial #testimonial-slide .owl-item q {
+      font-size: 16px;
+      line-height: 24px; }
+
+  .topfooter {
+    padding: 50px 0; }
+    .topfooter .topfooter-col1-address {
+      padding-top: 75px; }
+
+  .bottomfooter {
+    padding: 30px 0; }
+
+  section.about-us .menu-intro {
+    padding: 100px 0; }
+  section.about-us .about-intro {
+    padding: 80px 0; }
+    section.about-us .about-intro .image-holder {
+      margin-top: 70px; }
+
+  section.service .menu-intro {
+    padding: 100px 0; }
+
+  section.chef-master .sale-intro {
+    margin-top: 30px; }
+
+  .contact-banner {
+    padding: 40px 0; }
+    .contact-banner .contact-banner-title {
+      font-size: 20px; }
+
+  #reservationpage .reservation-intro-title {
+    font-size: 36px; }
+  #reservationpage .reservation-intro-text {
+    font-size: 30px; }
+  #reservationpage .about-us .image-holder {
+    margin-top: 130px; }
+
+  #contactpage .menu-intro-title {
+    font-size: 36px; }
+  #contactpage .menu-intro-text {
+    font-size: 30px; }
+
+  .shopping .menu-intro {
+    padding: 120px 0; }
+
+  #checkoutpage .menu-intro {
+    padding: 120px 0; }
+  #checkoutpage .checkout-customer-login a {
+    padding: 5px 10px; } }
+@media (max-width: 767px) {
+  .topheader-cart {
+    margin: 0 30px; }
+  .topheader-hotline {
+    display: block;
+    border-style: solid none solid none;
+    border-width: 1px;
+    padding: 8px 0;
+    border-color: #e8e8e8; }
+
+  .banner .owl-item .banner-caption {
+    width: 95%; }
+    .banner .owl-item .banner-caption-title {
+      font-size: 25px; }
+    .banner .owl-item .banner-caption-text {
+      font-size: 12px; }
+    .banner .owl-item .banner-caption a.button-reservation {
+      margin-top: 0; }
+
+  .menu-item {
+    padding: 60px 0; }
+  .menu-intro-title {
+    font-size: 30px; }
+  .menu-intro-text {
+    font-size: 30px; }
+
+  .sale .sale-item-box-title {
+    margin-top: 0; }
+
+  .chef .chef-group-item:nth-child(2) {
+    margin: 30px 0; }
+
+  .testimonial #testimonial-slide .owl-item-text {
+    padding: 0 20px; }
+    .testimonial #testimonial-slide .owl-item-text cite {
+      font-size: 24px; }
+
+  .blog {
+    padding: 60px 0; }
+
+  .topfooter .topfooter-col1-address {
+    padding-top: 0;
+    margin-bottom: 30px; }
+
+  section.about-us .menu-intro {
+    padding: 90px 0; }
+    section.about-us .menu-intro-title {
+      font-size: 30px; }
+    section.about-us .menu-intro-text {
+      font-size: 24px; }
+
+  section.service .menu-intro-title {
+    font-size: 30px; }
+  section.service .menu-intro-text {
+    font-size: 24px; }
+  section.service .about-box:nth-child(2) {
+    border-top: 1px dashed #888;
+    border-bottom: 1px dashed #888;
+    margin: 15px 0;
+    padding: 15px 0; }
+
+  .chef-master {
+    padding: 20px 0; }
+
+  .tablebooking .sale-intro-title {
+    font-size: 30px; }
+  .tablebooking .sale-intro-text {
+    font-size: 24px; }
+
+  #reservationpage .reservation {
+    padding: 120px 0; }
+    #reservationpage .reservation .reservation-intro-title {
+      font-size: 30px; }
+    #reservationpage .reservation .reservation-intro-text {
+      font-size: 24px; }
+  #reservationpage .about-us .image-holder {
+    margin-top: 10px; }
+
+  .contact-us {
+    padding: 60px 0;
+    text-align: center; }
+    .contact-us iframe {
+      height: 300px; }
+
+  .location {
+    padding: 80px 0;
+    text-align: center; }
+    .location-box .col-xs-12.col-md-4:nth-child(2) {
+      margin: 30px 0; }
+    .location-box address i.fa {
+      position: static; }
+
+  #contactpage .menu-intro {
+    padding: 120px 0; }
+    #contactpage .menu-intro-title {
+      font-size: 30px; }
+    #contactpage .menu-intro-text {
+      font-size: 24px; }
+
+  .dishes {
+    padding: 80px 0; }
+
+  #navigation {
+    margin-bottom: 30px; }
+
+  .post .commentform {
+    margin-bottom: 60px; }
+
+  section.shoppage .menu-intro {
+    padding: 120px 0; }
+  section.shoppage .shop {
+    padding: 60px 0; }
+
+  .product-detail-title h2 {
+    margin-top: 20px; }
+
+  .checkout-customer-login {
+    padding: 0 20px; }
+    .checkout-customer-login a {
+      right: 20px; } }
+@media (max-width: 575px) {
+  .topheader-opening {
+    display: block;
+    border-bottom: 1px solid;
+    margin-bottom: 10px; }
+  .topheader-hotline {
+    border: none; }
+
+  .account-box {
+    width: 280px; }
+
+  .banner .owl-item .banner-caption {
+    width: 100%; }
+    .banner .owl-item .banner-caption img {
+      display: none; }
+    .banner .owl-item .banner-caption-title {
+      font-size: 24px;
+      line-height: 24px; }
+    .banner .owl-item .banner-caption-text {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 8px; }
+    .banner .owl-item .banner-caption .button-reservation {
+      padding: 0px 20px;
+      font-size: 12px; }
+
+  .about img {
+    width: 100%; }
+  .about .col-xs-12.col-sm-4:nth-child(2) {
+    margin: 30px 0; }
+
+  .menu-intro-title {
+    font-size: 30px; }
+  .menu-intro-text {
+    font-size: 24px; }
+  .menu .menu-item-dining {
+    padding: 15px 0 0 100px; }
+    .menu .menu-item-dining-image {
+      width: 75px; }
+
+  .special .carousel-control {
+    width: 35px;
+    height: 35px; }
+  .special .carousel-control.left {
+    right: 40px; }
+
+  .sale .sale-intro-title {
+    font-size: 36px; }
+  .sale .sale-intro-text {
+    font-size: 20px; }
+  .sale .sale-item-box-title {
+    margin-top: 10px; }
+
+  .reservation .reservation-intro-title {
+    font-size: 36px; }
+  .reservation .reservation-intro-text {
+    font-size: 30px; }
+
+  .chef {
+    padding: 60px 0; }
+
+  .testimonial #testimonial-slide .owl-item-text {
+    padding: 0; }
+    .testimonial #testimonial-slide .owl-item-text q {
+      font-size: 14px;
+      line-height: 24px; }
+
+  .blog .col-xs-12.col-sm-4:nth-child(2) {
+    margin: 30px 0; }
+
+  .topfooter-col3 {
+    margin: 30px 0; }
+
+  section.about-us .menu-intro {
+    padding: 90px 0; }
+    section.about-us .menu-intro-title {
+      font-size: 24px; }
+
+  section.service .about-box img {
+    width: auto; }
+
+  .tablebooking {
+    padding: 60px 0; }
+    .tablebooking .sale-intro-title {
+      font-size: 24px; }
+    .tablebooking p {
+      font-size: 14px; }
+
+  #reservationpage .reservation .reservation-intro-title {
+    font-size: 24px; }
+  #reservationpage .about-us .about-intro {
+    padding: 60px 0;
+    text-align: center; }
+  #reservationpage .about-us .image-holder {
+    margin-top: 10px; }
+
+  .location {
+    padding: 60px 0; }
+    .location .sale-intro-text {
+      font-size: 20px; }
+    .location-box address {
+      text-align: left; }
+
+  #contactpage .menu-intro-text {
+    font-size: 20px; }
+
+  .dishes {
+    padding: 30px 0; }
+    .dishes .sale-intro-title {
+      font-size: 24px; }
+    .dishes .sale-intro-text {
+      font-size: 16px; }
+
+  .gallery .sale-intro-title {
+    font-size: 24px; }
+  .gallery .sale-intro-text {
+    font-size: 16px; }
+
+  #navigation {
+    margin-bottom: 30px; }
+
+  .blog-intro-title {
+    font-size: 30px; }
+
+  .post .blog-item-box img {
+    width: 100%; }
+  .post .comment-box {
+    padding-left: 0; }
+    .post .comment-box:nth-child(3) {
+      margin: 30px 0; }
+    .post .comment-box-image {
+      position: static;
+      width: 100px;
+      display: inline-block;
+      margin-bottom: 20px; }
+
+  section.shoppage .menu-intro-title {
+    font-size: 24px; }
+  section.shoppage .menu-intro-text {
+    font-size: 24px; }
+  section.shoppage .shop {
+    padding: 60px 0; }
+
+  .productpage .menu-intro {
+    padding: 120px 0; }
+    .productpage .menu-intro-title {
+      font-size: 24px; }
+  .productpage .product-detail-price .addcart button {
+    padding: 14px 15px; }
+
+  .shopping .menu-intro-title {
+    font-size: 24px; }
+
+  .shopping-cart .coupon-form input {
+    width: 100%;
+    margin-bottom: 20px; }
+  .shopping-cart .coupon-form button {
+    position: static;
+    width: 100%; }
+
+  #checkoutpage .checkout {
+    padding: 60px 0; }
+    #checkoutpage .checkout-customer-login {
+      padding-left: 10px;
+      height: 100px; }
+      #checkoutpage .checkout-customer-login a {
+        position: static;
+        margin-top: 10px;
+        padding: 5px 5px; } }
+
+/*# sourceMappingURL=style.css.map */
